@@ -1,0 +1,1232 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');    /* google font 사이트에서 가져옴 */
+
+*{                        /* 전체 선택자 */
+	
+}
+
+
+#ht2Table{
+	border:1px solid #ccc;
+	border-collapse:collapse;
+}
+#ht2Table th{            /* 자손선택자 */
+	border:1px solid #ccc;
+	padding:2px;
+}
+#ht2Table td{
+	border:1px solid #ccc;
+}
+
+#ht3Table{
+	border:5px solid #ccc;
+	border-collapse:collapse;
+}
+#ht3Table th{
+	border:5px solid #ccc;
+	padding:10px;
+}
+#ht3Table td{
+	border:5px solid #ccc;
+}
+
+#ht4Img{
+	width:200px;
+}
+
+#ht6Video{
+	width:300px;
+}
+
+#ht7Img{
+	width:70%;
+}
+
+#ht11Id1{
+	width: 60px;
+	height: 19px;
+}
+
+
+
+#css1 h4{                /* css1 h4 선택자 */
+	color:red;           /* color 속성, red 속성값 */
+}
+#css1P1{
+	color: blue;
+	margin: 2px;
+}
+#css1P2{
+	color: green;
+	margin: 2px;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#css3P1{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: small;
+	font-style: italic;
+	font-weight: 100;
+}
+#css3P2{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: medium;
+	font-style: normal;
+	font-weight: 200;
+}
+#css3P3{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: large;
+	font-style: oblique;
+	font-weight: 300;
+}
+#css3P4{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: larger;
+	font-style: calc();
+	font-weight: 400;
+}
+#css3P5{
+	font-family: 'Nanum Pen Script', cursive;        /* google font 사이트에서 가져옴 */
+	font-size: larger;
+	font-style: inherit;
+	font-weight: 600;
+}
+
+#css4{
+	background: url(../images/cup3.jpg);
+}
+#css4Li{
+	color: rgba(255, 166, 0, 255);
+}
+
+#css5P1{
+	text-align: center;
+}
+#css5P2{
+	text-align: right;
+}
+#css5P3{
+	line-height: 100px;
+}
+#css5P4{
+	text-decoration: underline overline line-through none;
+}
+#css5P5{
+	text-shadow: 5px 5px 3px;
+}
+
+#css6Ul1{
+	list-style-type: square;
+}
+#css6Ul2{
+	list-style-type: upper-alpha;
+}
+#css6Ul3{
+	list-style-type: none;
+}
+
+#css7 table{
+	caption-side: top;
+	border: 1px solid #222;
+	border-collapse: collapse;      /* 이것이 없으면 선이 두겹이다 */
+}
+#css7 caption{
+	font-size: larger;
+	font-weight: 600;
+}
+#css7 th{
+	border: 1px solid #222;
+	padding: 10px;
+	background-color: #ccc;
+}
+#css7 td{
+	border: 1px solid #222;
+	padding: 10px;
+}
+
+#css8 img{
+	width: 50%;
+}
+#css8Box1{
+	width: 360px;            /* width=content이 360px이 되도록  */
+	height: 150px;
+	padding: 20px;
+	border: 10px solid #ccc;
+}
+#css8Box2{
+	box-sizing: border-box;   /* width=content+padding+border+margin이 360px이 되도록  */
+	width: 360px;
+	height: 150px;
+	padding: 20px;
+	border: 10px solid #ccc;
+}
+
+#css9P1{
+	border: 5px solid #222;
+	width: 30px;
+	height: 30px;
+}
+#css9P2{
+	border: 1px dotted;
+}
+#css9P3{
+	border: 1px dashed;
+}
+#css9P4{
+	border: 1px double;
+}
+#css9P5{
+	border: 10px groove;
+	width: 90px;
+	height: 30px;
+}
+#css9P6{
+	border: 10px inset;
+	width: 90px;
+	height: 30px;
+}
+#css9P7{
+	border: 10px outset;
+	width: 90px;
+	height: 30px;
+}
+#css9P8{
+	border: 10px ridge;
+	width: 90px;
+	height: 30px;
+}
+#css9P9{
+	border: 1px solid #222;
+	border-width: 10px 20px 30px 40px;
+	box-sizing: border-box;
+	width: 200px;
+	height: 80px;
+}
+#css9P10{
+	border: 1px solid #222;
+	border-width: 10px 20px 30px 40px;
+	box-sizing: border-box;
+	width: 200px;
+	height: 80px;
+	border-color: black blue yellow green;
+	border-radius: 20px;
+}
+#css9P11{
+	width: 200px;
+	height: 100px;
+	display: inline-block;
+	border: 1px solid #222;
+	margin: 20px;
+}
+#css9P12{
+	width: 200px;
+	height: 100px;
+	display: inline-block;
+	border: 1px solid #222;
+	margin: 20px 40px;
+}
+#css9P13{
+	width: 200px;
+	height: 100px;
+	display: inline-block;
+	border: 1px solid #222;
+	margin: 20px 40px 60px;
+}
+#css9P14{
+	width: 200px;
+	height: 100px;
+	display: inline-block;
+	border: 1px solid #222;
+	margin: 20px 40px 60px 80px;
+}
+#css9P15{
+	width: 200px;
+	height: 100px;
+	display: inline-block;
+	border: 1px solid #222;
+	margin: 20px 40px 60px 80px;
+	padding: 20px 40px 60px 80px;
+}
+
+#css10P1 ul li{
+	border: 1px solid #222;
+	padding: 10px;
+	margin: 0 10px;
+	list-style-type: none;
+}
+#css10P2 ul li{
+	border: 1px solid #222;
+	padding: 10px;
+	margin: 0 10px;
+	list-style-type: none;
+	display: inline-block;
+}
+#css10P3 ul li{
+	border: 1px solid #222;
+	padding: 10px;
+	margin: 10px;
+	list-style-type: none;
+}
+#css10P3Li1{
+	background: #ffd800;
+}
+#css10P3Li2{
+	background-color: aqua;
+}
+#css10P3Li3{
+	background-color: bisque;
+}
+#css10P3Li4{
+	background-color: brown;
+}
+#css10P4 ul li{
+	border: 1px solid #222;
+	padding: 10px;
+	margin: 10px;
+	list-style-type: none;
+}
+#css10P4Li1{
+	background: #ffd800;
+	float: left;
+}
+#css10P4Li2{
+	background-color: aqua;
+	float: right;
+}
+#css10P4Li3{
+	background-color: bisque;
+	
+}
+#css10P4Li4{
+	background-color: brown;
+	clear: both;                    /* float 전체 해제 */
+}
+
+#css11Div1{
+	width: 100%;
+	height: 60px;
+	background-color: aqua;
+}
+#css11Div2{
+	width: 20%;
+	height: 100px;
+	background-color: azure;
+	float: left;
+}
+#css11Div3{
+	width: 60%;
+	height: 100px;
+	float: left;
+}
+#css11Div4{
+	width: 20%;
+	height: 100px;
+	background-color: azure;
+	float: right;
+}
+#css11Div5{
+	width: 100%;
+	height: 40px;
+	background-color: blue;
+	clear: both;
+}
+
+#css12P1{
+	width: 400px;
+	border: 1px solid #222;
+	padding: 5px;
+	margin: auto;
+}
+#css12P2{
+	width: 200px;
+	border: 1px solid #222;
+	padding: 5px;
+	position: relative;
+	left: 50px;
+}
+#css12P3{
+	width: 200px;
+	border: 1px solid #222;
+	padding: 5px;
+	position: relative;
+	left: 100px;
+	top: -50px;
+}
+#css12P4{
+	width: 200px;
+	border: 1px solid #222;
+	padding: 5px;
+	margin: 0px;
+	position: fixed;
+	right: 30px;
+	top: 30px;
+}
+
+#css13Div1{
+	background-color: aliceblue;
+}
+#css13Div2{
+	background-image: url(../images/flower1.jpg);
+	width: 400px;
+	height: 400px;
+	background-size: 200px;
+}
+#css13Div3{
+	background-image: url(../images/flower1.jpg);
+	width: 400px;
+	height: 400px;
+	background-size: 80%;
+}
+#css13Div4{
+	background-image: url(../images/flower1.jpg);
+	width: 400px;
+	height: 400px;
+	background-size: contain;
+}
+#css13Div5{
+	background-image: url(../images/flower1.jpg);
+	width: 400px;
+	height: 400px;
+	background-size: cover;
+}
+
+#css14Div1{
+	width: 300px;
+	height: 100px;
+	border: 1px solid #222;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, white, blue);
+}
+#css14Div2{
+	width: 300px;
+	height: 100px;
+	border: 1px solid #222;
+	border-radius: 10px;
+	background: linear-gradient(to top, white, blue);
+	margin-top: 10px;
+	color: white;
+}
+#css14Div3{
+	width: 300px;
+	height: 100px;
+	border: 1px solid #222;
+	border-radius: 10px;
+	background: linear-gradient(45deg, white, blue);
+	margin-top: 10px;
+	color: white;
+}
+#css14Div4{
+	width: 300px;
+	height: 100px;
+	border: 1px solid #222;
+	border-radius: 10px;
+	background: linear-gradient(275deg, white, blue);
+	margin-top: 10px;
+	color: white;
+}#css14Div5{
+	width: 300px;
+	height: 100px;
+	border: 1px solid #222;
+	border-radius: 10px;
+	background: linear-gradient(180deg, white 30%, skyblue 60%, blue);
+	margin-top: 10px;
+	color: #222;
+}
+#css14Div6{
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+	border: 1px solid #222;
+	background: radial-gradient(white, yellow, red);
+}
+#css14Div7{
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+	border: 1px solid #222;
+	background: radial-gradient(circle, white, yellow, red);
+}
+#css14Div8{
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+	border: 1px solid #222;
+	background: radial-gradient(circle at 20% 20%, white, yellow, red);
+}
+#css14Div9{
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+	border: 1px solid #222;
+	background: radial-gradient(closest-side, white, yellow, red);
+}
+#css14Div10{
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+	border: 1px solid #222;
+	background: radial-gradient(closest-corner, white, yellow, red);
+}
+#css14Div11{
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+	border: 1px solid #222;
+	background: radial-gradient(farthest-side at 80% 80%, white, yellow, red);
+}
+#css14Div12{
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+	border: 1px solid #222;
+	background: radial-gradient(farthest-corner at 10% 10%, white, yellow, red);
+}
+#css14Div13{
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+	border-radius: 50%;
+	background: radial-gradient(circle at 20% 20%, white, blue);
+}
+
+#css15Fieldset1 p{
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+#css15Fieldset2 >p{
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+#css15Fieldset3 > div >p{
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+#css15Legend1 ~ p{
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+#css15H1 + p{
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+#css16 li a[href]{
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#css17 li a[href="#"]{
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: default;
+}
+
+#css18Nav ul li{
+	width: 150px;
+	list-style-type: none;
+	display: inline-block;
+}
+#css18Nav a:link{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+#css18Nav a:visited{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+#css18Nav a:hover{
+	background-color: #222;
+	color: #fff;
+}
+#css18Nav a:active{
+	background-color: #f00;
+}
+
+.css19Li::after{
+	content: 'new';
+	box-sizing: border-box;
+	margin: 0 30px;
+	background: #f00;
+}
+
+.css20DivClass{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #222;
+	display: inline-block;
+	margin: 0 20px;
+}
+.css20DivClass > div{
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+}
+#css20TransformX:hover{
+	transform: translateX(20px);
+}
+#css20TransformY:hover{
+	transform: translateY(20px);
+}
+#css20TransformXY:hover{
+	transform: translate(20px,20px);
+}
+#css20ScaleX:hover{
+	transform: scaleX(2);
+}
+#css20ScaleY:hover{
+	transform: scaleY(2);
+}
+#css20Scale:hover{
+	transform: scale(0.5,0.8);
+}
+
+.css21DivClass{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #222;
+	display: inline-block;
+	margin: 0 20px;
+	perspective: 100px;        /* 원근감 */
+}
+.css21DivClass > div{
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	transition: all 3s;
+}
+#css21Rotate1:hover{
+	transform: rotate(45deg);
+}
+#css21Rotate2:hover{
+	transform: rotate(-45deg);
+}
+#css21Rotate3:hover{
+	transform: rotateX(55deg);
+}
+#css21Rotate4:hover{
+	transform: rotateY(55deg);
+}
+#css21Rotate5:hover{
+	transform: rotateZ(55deg);
+}
+#css21Rotate6:hover{
+	transform: rotate3d(2,1,-1,55deg);
+}
+
+.css22DivClass{
+	width: 70px;
+	height: 70px;
+	border: 1px solid #222;
+	display: inline-block;
+	margin: 0 20px;
+	perspective: 100px;        /* 원근감 */
+}
+.css22DivClass > div{
+	width: 70px;
+	height: 70px;
+	background-color: orange;
+	transition: all 3s;
+}
+#css22Skew1:hover{
+	transform: skewX(30deg);
+}
+#css22Skew2:hover{
+	transform: skewY(15deg);
+}
+#css22Skew3:hover{
+	transform: skew(-25deg,-15deg);
+}
+#css22Skew4{
+	transform: skewX(30deg);
+	text-align: center;
+	height: 40px;
+}
+
+#css23Box1{
+	width: 150px;
+	height: 50px;
+	background-color: #07F;
+	border: 1px solid #222;
+	display: inline-block;
+	transition-property: width, height;
+	transition-duration: 2s, 4s;
+}
+#css23Box1:hover{
+	width: 180px;
+	height: 200px;
+}
+#css23Box2{
+	width: 150px;
+	height: 50px;
+	background-color: #07F;
+	border: 1px solid #222;
+	display: inline-block;
+	transition-property: width, height;
+	transition-duration: 2s, 4s;
+	transition-delay: 1.5s;
+}
+#css23Box2:hover{
+	width: 180px;
+	height: 200px;
+}
+#css23Box3{
+	width: 150px;
+	height: 50px;
+	background-color: #07F;
+	border: 1px solid #222;
+	display: inline-block;
+	transition-property: width, height;
+	transition-duration: 2s, 4s;
+	transition-delay: 1.5s;
+	transition-timing-function: linear;
+}
+#css23Box3:hover{
+	width: 180px;
+	height: 200px;
+}
+
+.css24Box div{
+	width: 100px;
+	height: 50px;
+	margin: 0 10px;
+	color: white;
+	background-color: blue;
+	border-radius: 5px;
+	text-align: center;
+	display: inline-block;
+}
+.css24Box:hover div{
+	height: 400px;
+}
+.css24Box #css24Box1{
+	transition: 3s ease;
+}
+.css24Box #css24Box2{
+	transition: 3s linear;
+}
+.css24Box #css24Box3{
+	transition: 3s ease-in;
+}
+.css24Box #css24Box4{
+	transition: 3s ease-out;
+}
+.css24Box #css24Box5{
+	transition: 3s ease-in-out
+}
+
+.css25Box div{
+	display: inline-block;
+	margin: 0 10px;
+}
+#css25Box1{
+	width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;    /* 무한 반복 */
+}
+@keyframes example{        /* 애니메이션 정의 */
+	from{background-color: red;}   /* 시작 */
+	to{  background-color: yellow;}    /* 끝 */
+}
+#css25Box2{
+	width: 100px;
+  height: 100px;
+	text-align: center;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;    /* 무한 반복 */
+}
+@keyframes example2{        /* 애니메이션 정의 */
+	from{background-color: red;}   /* 시작 */
+	50%{border-radius: 50%;}
+	to{  background-color: yellow;}    /* 끝 */
+}
+
+#css26Box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ccc;
+	border: 1px solid #000;
+	width: 100px;
+	height: 100px;
+}
+#css26Box1{
+	text-align: center;
+}
+
+#css27Box{
+	background: url(../images/cup2.jpg) no-repeat fixed;
+	background-size: cover;
+	width: 600px;
+	height: 300px;
+}
+@media screen and (max-width:1024px) {
+	#css27Box{
+		background: url(../images/cup3.jpg) no-repeat fixed;
+		background-size: cover;
+	}
+}
+@media screen and (max-width:400px) {
+	#css27Box{
+		background: url(../images/flower1.jpg) no-repeat fixed;
+		background-size: cover;
+	}
+}
+
+.css28Container{
+	width: 700px;
+	background-color: #eee;
+	border: 1px solid #222;
+	margin-bottom: 30px;
+	display: flex;             /* 가로 배치 */
+	flex-direction: row;          /* 기본축 배치 방법 지정 */
+}
+.css28Box{
+	padding: 5px 45px;
+	margin: 5px;
+	width: 80px;
+	background-color: #222;
+}
+.css28Box p{
+	color: #fff;
+	text-align: center;
+}
+
+.css29Container{
+	width: 700px;
+	background-color: #eee;
+	border: 1px solid #222;
+	margin-bottom: 30px;
+	display: flex;             /* 가로 배치 */
+	flex-direction: row-reverse;          /* 기본축 배치 방법 지정 */
+}
+.css29Box{
+	padding: 5px 45px;
+	margin: 5px;
+	width: 80px;
+	background-color: #222;
+}
+.css29Box p{
+	color: #fff;
+	text-align: center;
+}
+
+.css30Container{
+	width: 700px;
+	background-color: #eee;
+	border: 1px solid #222;
+	margin-bottom: 30px;
+	display: flex;             /* 가로 배치 */
+	flex-direction: column-reverse;          /* 기본축 배치 방법 지정 */
+}
+.css30Box{
+	padding: 5px 45px;
+	margin: 5px;
+	width: 80px;
+	background-color: #222;
+}
+.css30Box p{
+	color: #fff;
+	text-align: center;
+}
+
+.css31Container{
+	width: 400px;
+	background-color: #eee;
+	border: 1px solid #222;
+	margin-bottom: 30px;
+	display: flex;             /* 가로 배치 */
+	flex-direction: row;          /* 기본축 배치 방법 지정 */
+	flex-wrap: nowrap;
+}
+.css31Box{
+	padding: 5px 45px;
+	margin: 5px;
+	width: 80px;
+	background-color: #222;
+}
+.css31Box p{
+	color: #fff;
+	text-align: center;
+}
+
+.css32Container{
+	width: 400px;
+	background-color: #eee;
+	border: 1px solid #222;
+	margin-bottom: 30px;
+	display: flex;             /* 가로 배치 */
+	flex-direction: row;          /* 기본축 배치 방법 지정 */
+	flex-wrap: wrap;
+}
+.css32Box{
+	padding: 5px 45px;
+	margin: 5px;
+	width: 80px;
+	background-color: #222;
+}
+.css32Box p{
+	color: #fff;
+	text-align: center;
+}
+
+.css33Container{
+	width: 800px;
+	background-color: #eee;
+	border: 1px solid #222;
+	margin-bottom: 30px;
+	display: flex;             /* 가로 배치 */
+	flex-direction: row;          /* 기본축 배치 방법 지정 */
+}
+.css33Box{
+	padding: 5px 45px;
+	margin: 5px;
+	width: 80px;
+	background-color: #222;
+}
+.css33Box p{
+	color: #fff;
+	text-align: center;
+}
+
+.css34Container{
+	width: 800px;
+	background-color: #eee;
+	border: 1px solid #222;
+	margin-bottom: 30px;
+	display: flex;             /* 가로 배치 */
+	flex-direction: row;          /* 기본축 배치 방법 지정 */
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.css34Box{
+	padding: 5px 45px;
+	margin: 5px;
+	width: 80px;
+	background-color: #222;
+}
+.css34Box p{
+	color: #fff;
+	text-align: center;
+}
+
+.css35Container{
+	width: 800px;
+	background-color: #eee;
+	border: 1px solid #222;
+	margin-bottom: 30px;
+	display: flex;             /* 가로 배치 */
+	flex-direction: row;          /* 기본축 배치 방법 지정 */
+	flex-wrap: wrap;
+	/* justify-content: center; */
+	align-items: stretch;
+}
+.css35Box{
+	padding: 5px 45px;
+	margin: 5px;
+	width: 80px;
+	background-color: #222;
+}
+.css35Box p{
+	color: #fff;
+	text-align: center;
+}
+
+#css36Id1{              /* https://youtu.be/dSdvumCRwKM?list=PLG7te9eYUi7tS_nx58Z1Zi9Iqt0JEQ1Is */
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-template-rows: 300px 350px;
+}
+.css36Class1{
+	padding: 10px;
+	background-color: #eee;
+}
+.css36Class1:nth-child(odd){
+	background-color: #bbb;
+}
+#css36Id2{              /* https://youtu.be/dSdvumCRwKM?list=PLG7te9eYUi7tS_nx58Z1Zi9Iqt0JEQ1Is */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+.css36Class2{
+	padding: 10px;
+	background-color: #eee;
+}
+.css36Class2:nth-child(odd){
+	background-color: #bbb;
+}
+#css36Id3{              /* https://youtu.be/dSdvumCRwKM?list=PLG7te9eYUi7tS_nx58Z1Zi9Iqt0JEQ1Is */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: minmax(10px, auto);
+}
+.css36Class3{
+	padding: 10px;
+	background-color: #eee;
+}
+.css36Class3:nth-child(odd){
+	background-color: #bbb;
+}
+#css36Id4{              /* https://youtu.be/dSdvumCRwKM?list=PLG7te9eYUi7tS_nx58Z1Zi9Iqt0JEQ1Is */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: minmax(10px, auto);
+}
+.css36Class4{
+	padding: 10px;
+	background-color: #eee;
+}
+.css36Class4:nth-child(odd){
+	background-color: #bbb;
+}
+#css36Id5{              /* https://youtu.be/dSdvumCRwKM?list=PLG7te9eYUi7tS_nx58Z1Zi9Iqt0JEQ1Is */
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-rows: minmax(10px, auto);
+}
+.css36Class5{
+	padding: 10px;
+	background-color: #eee;
+}
+.css36Class5:nth-child(odd){
+	background-color: #bbb;
+}
+#css36Id6{              /* https://youtu.be/dSdvumCRwKM?list=PLG7te9eYUi7tS_nx58Z1Zi9Iqt0JEQ1Is */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 100px);
+}
+#css36Id6 div{
+	padding: 15px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+.css36Class6-1{
+	background-color: #3689ff;
+	grid-column: 1/4;
+}
+.css36Class6-2{
+	background-color: #00cf12;
+	grid-row: 2/4;
+}
+.css36Class6-3{
+	background-color: #ff9019;
+	grid-column: 2/4;
+	grid-row: 2/3;
+}
+.css36Class6-4{
+	background-color: #4e460e;
+	grid-column: 3/4;
+	grid-row: 3/4;
+}
+#css36Id7{              /* https://youtu.be/dSdvumCRwKM?list=PLG7te9eYUi7tS_nx58Z1Zi9Iqt0JEQ1Is */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 100px);
+	grid-template-areas: 
+		"css36Class7-1 css36Class7-1 css36Class7-1"
+		"css36Class7-2 css36Class7-3 css36Class7-3"
+		"css36Class7-2 .             css36Class7-4";
+}
+#css36Id7 div{
+	padding: 15px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+.css36Class7-1{
+	background-color: #3689ff;
+	grid-area: css36Class7-1;
+}
+.css36Class7-2{
+	background-color: #00cf12;
+	grid-area: css36Class7-2;
+}
+.css36Class7-3{
+	background-color: #ff9019;
+	grid-area: css36Class7-3;
+}
+.css36Class7-4{
+	background-color: #4e460e;
+	grid-area: css36Class7-4;
+}
+
+
+#js5Button1{
+	width: 64px;
+}
+
+.js9Class1{
+	list-style-type: none;
+}
+
+.js14Class1{
+	list-style-type: none;
+}
+
+.js18Class{
+	list-style-type: none;
+}
+
+.js19Class{
+	list-style-type: none;
+}
+
+#js29Id2{
+	width: 300px;
+	height: 200px;
+	border: 1px solid #000;
+}
+
+#js30Id2{
+	width: 300px;
+	height: 200px;
+	border: 1px solid #000;
+}
+
+#js40Image{
+	width: 300px;
+	height: 200px;
+	border: 1px solid #000;
+}
+.js40Class1{
+	font-style: italic;
+	font-weight: 500;
+}
+.js40Container{              /* https://youtu.be/dSdvumCRwKM?list=PLG7te9eYUi7tS_nx58Z1Zi9Iqt0JEQ1Is */
+	display: grid;
+	grid-template-columns: repeat(2, minmax(340px, auto));
+	grid-template-rows: minmax(5px, auto);
+	grid-template-areas: 
+		"js40Template1 js40Template1"
+		"js40Template2 js40Template3";
+}
+.js40Template1{
+	grid-area: js40Template1;
+}
+.js40Template2{
+	grid-area: js40Template2;
+}
+.js40Template3{
+	grid-area: js40Template3;
+}
+.js40Class2{
+	margin-top: 1px;
+}
+
+.js41Container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: minmax(10px, auto);
+	grid-template-areas:
+	"js41Template1 js41Template1"
+	"js41Template2 js41Template3"
+	".             js41Template4";
+}
+.js41Template1{
+	grid-area: js41Template1;
+	margin: 10px 5px;
+}
+.js41Template2{
+	grid-area: js41Template2;
+}
+.js41Template3{
+	grid-area: js41Template3;
+}
+.js41Template4{
+	grid-area: js41Template4;
+}
+.js41Img{
+	width: 300px;
+	height: 200px;
+}
+.js41Change3{
+	color: #07F;
+}
+
+.js42Img{
+	width: 300px;
+	height: 200px;
+}
+
+.js43Img{
+	width: 300px;
+	height: 200px;
+}
+
+.js44Img{
+	width: 300px;
+	height: 200px;
+}
+
+.js46Img{
+	width: 300px;
+	height: 200px;
+}
+
+.js47Class1{
+	width: 200px;
+	height: 100px;
+	border: 1px solid #000;
+	border-radius: 10%;
+	transition: 3s;
+}
+
+.js54Class1{
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+.js54Class1 th{
+	border: 1px solid #000;
+	background-color: #bbb;
+}
+.js54Class1 td{
+	border: 1px solid #000;
+}
+
+.js56Class1{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 0px;
+	transition: 1s;
+}
+
+.js56Class2{
+	width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#myContainer1Cup{
+	width:200px;
+	height:150px;
+}
+
+#myContainer2Rect{
+  width:100px;
+  height:100px;
+  border:10px solid blue;
+	border-radius:10%;     /* 테두리 둥글게 */
+  margin:30px;
+  transition:5s;         /* 지연시간 */
+}
