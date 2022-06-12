@@ -13,7 +13,12 @@
 	"ga2 ga2 ga2 ga2 ga2 ga2";
 }
 .ga1{
+	background-color: #bbb;
 	grid-area: ga1;
+}
+.ga2{
+	background-color: #ccc;
+	grid-area: ga2;
 }
 .ga3{
 	grid-area: ga3;
