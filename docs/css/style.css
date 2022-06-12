@@ -4,6 +4,23 @@
 	
 }
 
+.ga0{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 30px);
+	grid-template-areas: 
+	"ga1 ga1 ga1 ga1 ga1 ga1"
+	"ga3 ga4 ga4 ga4 ga4 ga4";
+}
+.ga1{
+	grid-area: ga1;
+}
+.ga3{
+	grid-area: ga3;
+}
+.ga4{
+	grid-area: ga4;
+}
 
 #ht2Table{
 	border:1px solid #ccc;
