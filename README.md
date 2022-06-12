@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi there this is my homepage 👋
 
 <!--
 **my-computer-school/my-computer-school** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
