@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');    /* google font 사이트에서 가져옴 */
 
-*{                        /* 전체 선택자 */
-	
-}
+
 
 .ga0{
 	display: grid;
@@ -13,11 +11,11 @@
 	"ga2 ga2 ga2 ga2 ga2 ga2";
 }
 .ga1{
-	background-color: #bbb;
+	border: 1px solid #000;
 	grid-area: ga1;
 }
 .ga2{
-	background-color: #ccc;
+	border: 1px solid #000;
 	grid-area: ga2;
 }
 .ga3{
