@@ -11,55 +11,14 @@
 </head>
 
 <body>
-  <nav class="menu-box-1">
-    <ul>
-      <li>
-        <a href="#">1menu_item</a>
-        <ul>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">1menu_item</a>
-        <ul>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">1menu_item</a>
-        <ul>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">1menu_item</a>
-        <ul>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-          <li><a href="#">2menu_item</a></li>
-        </ul>
-      </li>
-    </ul>
-    <input type="text" list="movie-options">
-    <datalist id="movie-options">
-      <option value="Dune"></option>
-      <option value="Dark Waters"></option>
-    </datalist>
-  </nav>
-
 
 </body>
 
 </html>
 
 ```
+[표 넣기]
+|이름|전화|이메일|
+|:---|:---|:---|
+|홍길동|010-1234-5678|honggilldong@gmail.com|
+|심청이|010-2345-6789|simcungi@gmail.com|
