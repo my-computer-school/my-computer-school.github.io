@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,20 +15,13 @@
     <a href="/html/signUp">sign up</a>
   </header>
   <nav>
-    <a href="/html/html.html">html</a>
+    <a onclick="fetch('/html/html.html').then(function(response){response.text().then(function(text){document.querySelector('#header').innerHTML = text;})})">
+      html
+    </a>
     <a href="/html/css.html">css</a>
   </nav>
   <main>
-    <article></article>
-    <section>
-      <article></article>
-    </section>
-    <aside>
-      <figure>
-        <img src="" alt="">
-        <figcaption></figcaption>
-      </figure>
-    </aside>
+    <header id="header2"></header>
   </main>
   <footer></footer>
 </body>
