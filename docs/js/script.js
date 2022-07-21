@@ -15,3 +15,19 @@ function fetchPage2(name2){
     })
   })
 }
+
+function fetchPage3(name3){
+  fetch(name3).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#article1').innerHTML = text;
+    })
+  })
+}
+
+function fetchPage4(name4){
+  fetch(name4).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#article1').innerHTML = text;
+    })
+  })
+}
