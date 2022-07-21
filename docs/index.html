@@ -4,25 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>index</title>
 </head>
 <body>
-  <header>
-    <a href="/index.html">home</a>
-    <a href="/html/introduction.html">introduction</a>
-    <a href="https://github.com/my-computer-school/javascript">private</a>
+  <header id="header1">
+    <a href="#!home" onclick="fetchPage('./html/home.html')">home</a>
+    <a href="#!history" onclick="fetchPage('./html/history.html')">history</a>
+    <a href="#!public_data" onclick="fetchPage('./html/public_data.html')">public_data</a>    
+    <a href="https://github.com/my-computer-school/javascript">private_data</a>
     <a href="/html/logIn.html">log in</a>
     <a href="/html/signUp">sign up</a>
   </header>
-  <nav>
-    <a onclick="fetch('/html/html.html').then(function(response){response.text().then(function(text){document.querySelector('#header').innerHTML = text;})})">
-      html
-    </a>
-    <a href="/html/css.html">css</a>
-  </nav>
+  <nav id="nav1"></nav>
   <main>
     <header id="header2"></header>
+    <article id="article1"></article>
   </main>
   <footer></footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>
