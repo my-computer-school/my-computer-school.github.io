@@ -6,8 +6,8 @@ function fetchPage1(name){
   })
 }
 
-function fetchPage2(name){
-  fetch(name).then(function(response){
+function fetchPage2(name2){
+  fetch(name2).then(function(response){
     response.text().then(function(text){
       document.querySelector('#header2').innerHTML = text;
     })
