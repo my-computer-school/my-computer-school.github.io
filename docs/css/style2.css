@@ -1,7 +1,12 @@
 #header2{
-  
+  display: inline-block;
 }
 
 .header2-1{
+  display: block;
+  margin-bottom: 0px;
+}
+
+.header2-2{
   display: block;
 }
