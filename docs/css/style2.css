@@ -1,7 +1,7 @@
 body{
   display: grid;
   grid-template-columns: 140px auto 140px;
-  grid-template-rows: minmax(40px, auto);
+  grid-template-rows: 25px 25px auto 25px;
   grid-template-areas: 
   "header1 header1 header1"
   "nav1 nav1 nav1"
@@ -35,7 +35,7 @@ body{
 
 .article1{
   display: inline-block;
-  background-color: #222222;
+  background-color: #999999;
   grid-area: article1; 
 }
 
@@ -47,6 +47,7 @@ body{
 .footer1{
   background-color: #ffff00;
   grid-area: footer1;
+  
 }
 
 .header2-1{

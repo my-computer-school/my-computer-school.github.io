@@ -33,3 +33,14 @@ function fetchPage4(name4){
     })
   })
 }
+
+function fetchPage5(name5){
+  fetch(name5).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article1').innerHTML = text;
+    })
+  })
+}
+
+const name15 = "Copyright 2020 - 2022"
+document.querySelector('.footer1').innerHTML = name15;
