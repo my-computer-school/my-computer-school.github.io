@@ -42,5 +42,5 @@ function fetchPage5(name5){
   })
 }
 
-const name15 = "Copyright 2020 - 2022"
+const name15 = "Copyright 2021 - 2022"
 document.querySelector('.footer1').innerHTML = name15;
