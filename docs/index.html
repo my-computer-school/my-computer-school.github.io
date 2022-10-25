@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style2.css">
+  <title>index</title>
 </head>
 <body>
-    email : <input type="email" name="" id="" placeholder="userid@mail"><br>
-    <input type="url" name="" id="" >
-    <input type="tel" name="" id="" placeholder="숫자만 입력하세요" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}">
-    시멘틱 태그
-    <header>시멘틱 태그</header>
-
-    -태그
-    <h1>제목태그</h1>
-    <img src="../images/cup1.jpg" alt="" srcset="">
+  <header class="header1">
+    <a href="#!home" onclick="fetchPage1('./php/index.php')">home</a>
+    <a href="#!history" onclick="fetchPage1('./html/history.html')">history</a>
+    <a href="#!public_data" onclick="fetchPage2('./html/public_data.html')">public_data</a>    
+    <a href="https://github.com/my-computer-school/javascript">private_data</a>
+    <a href="/html/logIn.html">log in</a>
+    <a href="/html/signUp">sign up</a>
+  </header>
+  <nav class="nav1"></nav>
+  <div class="header2"></div>
+  <div class="article1"></div>
+  <div class="advertisement1">advertisement</div>
+  <div class="footer1"></div>
+  <script src="./js/script.js"></script>
 </body>
 </html>
