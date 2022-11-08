@@ -36,6 +36,7 @@ body{
 .article1{
   display: inline-block;
   grid-area: article1; 
+  margin-left: 3px;
 }
 
 .advertisement1{
