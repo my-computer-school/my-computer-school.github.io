@@ -1,5 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');    /* google font 사이트에서 가져옴 */
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');    google font 사이트에서 가져옴 */
 
+
+body{
+  display: grid;
+  grid-template-columns: 140px auto 140px;
+  grid-template-rows: 25px 25px auto 25px;
+  grid-template-areas: 
+  "header1 header1 header1"
+  "nav1 nav1 nav1"
+  "header2 article1 advertisement1"
+  "header2 footer1 advertisement1";
+}
+
+.header1{
+  background-color: #3689ff;
+  grid-area: header1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+.nav1{
+  background-color: #00cf12;
+  grid-area: nav1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+ 
+}
+
+.header2{
+  display: block;
+  background-color: #ff9019;
+  grid-area: header2;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.article1{
+  display: inline-block;
+  grid-area: article1; 
+  margin-left: 3px;
+}
+
+.advertisement1{
+  background-color: #00ca23;
+  grid-area: advertisement1;
+}
+
+.footer1{
+  background-color: #ffff00;
+  grid-area: footer1;
+  
+}
+
+.header2-1{
+  display: block;
+  margin-bottom: 0px;
+  white-space: nowrap;      /* 자동 줄바꿈 방지 */
+  overflow: hidden;         /* 넘치는 부분 감추기 */ 
+  text-overflow: ellipsis;  /* 말줄임표 */
+}
+
+.header2-2{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 
 .ga0{
