@@ -1,3 +1,22 @@
+/*
+docs/index.html 20 - 51
+docs/html/index.html 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function fetchPage1(name){
   fetch(name).then(function(response){
     response.text().then(function(text){
