@@ -3,24 +3,10 @@ docs/index.html 20 - 51
 docs/html/index.html 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function fetchPage1(name){
   fetch(name).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.nav1').innerHTML = '';
+      document.querySelector('.navbar').innerHTML = '';
       document.querySelector('.header2').innerHTML = '';
       document.querySelector('.article1').innerHTML = text;
     })
@@ -30,7 +16,7 @@ function fetchPage1(name){
 function fetchPage2(name2){
   fetch(name2).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.nav1').innerHTML = text;
+      document.querySelector('.navbar').innerHTML = text;
       document.querySelector('.header2').innerHTML = '';
       document.querySelector('.article1').innerHTML = '';
     })

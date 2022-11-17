@@ -10,7 +10,7 @@ body{
   grid-template-rows: 25px 25px auto 25px;
   grid-template-areas: 
   "header1 header1 header1"
-  "nav1 nav1 nav1"
+  "nav1 article1 advertisement1"
   "header2 article1 advertisement1"
   "header2 footer1 advertisement1";
 }
@@ -22,6 +22,7 @@ body{
   margin-bottom: 0px;
   position: sticky;
 	top: 0px;
+	
 }
 
 .nav1{
