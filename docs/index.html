@@ -1,54 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./css/bootstrap5.2.2.css">
+    <link rel="stylesheet" href="/docs/css/style.css">
+    <link rel="stylesheet" href="/docs/css/class.css">
   </head>
-  <body>
+  <body class="my-grid-1">
     <header class="my-header">
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#bootstrap" onclick="fetchPage2('./doc/bootstrap.html')">bootstrap</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+      <a class="my-header-index" href="#" onclick="fetchPage1('/docs/index.html')">home</a>
+      <a class="my-header-index" href="#" onclick="fetchPage2('/docs/doc/aside.html')">doc</a>      
     </header>
 
-    <main class="d-flex">
-      <aside class="my-sidebar">
+    <nav class="my-nav">nav</nav>
+    <aside class="my-aside">
+      <div></div>
+    </aside>
+    <article class="my-article">
+      <div></div>
+    </article>
+    <aside class="my-advertisement">
+      <div>aside</div>
+    </aside>
 
-      </aside>
-      <article class="my-article container-fluid">
-        <img class="img-fluid" src="./images/cup4.jpg" alt="">
-      </article>
-    </main>
-
-    <footer class="my-footer text-center text-lg-start bg-light text-muted">
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://my-computer-school.github.io/">my-computer-school.github.io</a>
-      </div>
+    <footer class="my-footer">
+      <div class="text-align-center">footer</div>
     </footer>
     
     <script src="./js/script.js"></script>

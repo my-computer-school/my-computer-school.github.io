@@ -1,61 +1,89 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');    google font 사이트에서 가져옴 */
 
 
-body{
+.my-grid-1{
 	margin: 0;
 	padding-left: 5px;
 	padding-right: 5px;
   display: grid;
-  grid-template-columns: 140px auto 140px;
-  grid-template-rows: 25px 25px auto 25px;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: minmax(48px, auto) minmax(40px, auto) minmax(90px, auto) minmax(40px, auto);
   grid-template-areas: 
-  "header1 header1 header1"
-  "nav1 article1 advertisement1"
-  "header2 article1 advertisement1"
-  "header2 footer1 advertisement1";
+  "my-header my-header  my-header"
+	"my-nav    my-nav     my-nav"
+  "my-aside  my-article my-advertisement"
+  "my-aside  my-footer  my-advertisement";
 }
 
-.header1{
-  background-color: #3689ff;
-  grid-area: header1;
+.my-header{
+	grid-area: my-header;
+  margin-top: 5px;
+  margin-bottom: 5px;
+	border: 1px solid black;
+	padding-left: 5px;
+}
+.my-header-index{
+	margin-top: 5px;
+	margin-right: 5px;
+	border: 1px solid black;
+	display: inline-block;     /* 목차를 가로로 나열 할 때 */
+	text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
+}
+
+.my-nav{
+	grid-area: my-nav;
   margin-top: 0px;
-  margin-bottom: 0px;
-  position: sticky;
-	top: 0px;
-	
+  margin-bottom: 5px;
+	border: 1px solid black;
+	padding-left: 5px;
 }
 
-.nav1{
-  background-color: #00cf12;
-  grid-area: nav1;
+.my-aside{
+	grid-area: my-aside;
   margin-top: 0px;
-  margin-bottom: 0px;
-  position: sticky;
-	top: 25px;
+  margin-bottom: 5px;
+	border: 1px solid black;
+	padding-left: 5px;
+	padding-bottom: 5px;
 }
 
-.header2{
-  background-color: #c9bcae;
-  grid-area: header2;
-	white-space: nowrap;      /* 자동 줄바꿈 방지 */
-  overflow: hidden;         /* 넘치는 부분 감추기 */ 
-	text-overflow: ellipsis;  /* 말줄임표 */
+.my-aside-index{
+	margin-top: 5px;
+	margin-right: 5px;
+	border: 1px solid black;
+	display: block;            /* 목차를 세로로 나열 할 때 */
+	text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
+	white-space: nowrap;       /* 말줄임 세트 */
+	overflow: hidden;          /* 말줄임 세트 */
+	text-overflow: ellipsis;   /* 말줄임 세트 */
 }
 
-.article1{
-  grid-area: article1; 
-  margin-left: 3px;
+.my-article{
+  grid-area: my-article;
+  margin-top: 0px;
+  margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 1px solid black;
+	padding-left: 5px;
 }
 
-.advertisement1{
-  background-color: #00ca23;
-  grid-area: advertisement1;
+.my-advertisement{
+	grid-area: my-advertisement;
+  margin-top: 0px;
+  margin-bottom: 5px;
+	border: 1px solid black;
+	padding-left: 5px;
 }
 
-.footer1{
-  background-color: #ffff00;
-  grid-area: footer1;
-  
+.my-footer{
+	grid-area: my-footer;
+  margin-top: 0px;
+  margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 1px solid black;
+	padding-left: 5px;
 }
 
 .header2-1{

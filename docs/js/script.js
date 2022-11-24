@@ -6,11 +6,8 @@ docs/html/index.html
 function fetchPage1(name){
   fetch(name).then(function(response){
     response.text().then(function(text){
-			document.querySelector('.my-header').innerHTML = '';
-      document.querySelector('.my-sidebar').innerHTML = '';
-      document.querySelector('.my-article-1').innerHTML = '';
-      document.querySelector('.my-article-2').innerHTML = text;
-			document.querySelector('.my-footer').innerHTML = '';
+      document.querySelector('.my-aside').innerHTML = '';
+      document.querySelector('.my-article').innerHTML = '';
     })
   })
 }
@@ -18,7 +15,7 @@ function fetchPage1(name){
 function fetchPage2(name2){
   fetch(name2).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.my-sidebar').innerHTML = text;
+      document.querySelector('.my-aside').innerHTML = text;
       document.querySelector('.my-article').innerHTML = '';
     })
   })
