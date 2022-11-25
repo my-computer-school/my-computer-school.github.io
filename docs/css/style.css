@@ -2,15 +2,15 @@
 
 
 .my-grid-1{
-	margin: 0;
-	padding-left: 5px;
-	padding-right: 5px;
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
   display: grid;
   grid-template-columns: 150px auto 150px;
   grid-template-rows: minmax(48px, auto) minmax(40px, auto) minmax(90px, auto) minmax(40px, auto);
   grid-template-areas: 
   "my-header my-header  my-header"
-	"my-nav    my-nav     my-nav"
+  "my-nav    my-nav     my-nav"
   "my-aside  my-article my-advertisement"
   "my-aside  my-footer  my-advertisement";
 }
@@ -33,62 +33,65 @@
 }
 
 .my-nav{
-	grid-area: my-nav;
-	margin-top: 0px;
+  grid-area: my-nav;
+  margin-top: 0px;
   margin-bottom: 5px;
-	border: 1px solid black;
-	padding-left: 5px;
+  border: 1px solid black;
+  padding-left: 5px;
 }
 
 .my-aside{
-	grid-area: my-aside;
+  grid-area: my-aside;
   margin-top: 0px;
   margin-bottom: 5px;
-	border: 1px solid black;
-	padding-left: 5px;
-	padding-bottom: 5px;
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 .my-aside-index{
-	margin-top: 5px;
-	margin-right: 5px;
-	border: 1px solid black;
-	display: block;            /* 목차를 세로로 나열 할 때 */
-	text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
-	white-space: nowrap;       /* 말줄임 세트 */
-	overflow: hidden;          /* 말줄임 세트 */
-	text-overflow: ellipsis;   /* 말줄임 세트 */
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 1px solid black;
+  display: block;            /* 목차를 세로로 나열 할 때 */
+  text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
+  white-space: nowrap;       /* 말줄임 세트 */
+  overflow: hidden;          /* 말줄임 세트 */
+  text-overflow: ellipsis;   /* 말줄임 세트 */
 }
 
 .my-article{
   grid-area: my-article;
   margin-top: 0px;
   margin-bottom: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
-	border: 1px solid black;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 .my-advertisement{
-	grid-area: my-advertisement;
+  grid-area: my-advertisement;
   margin-top: 0px;
   margin-bottom: 5px;
-	border: 1px solid black;
-	padding-left: 5px;
+  border: 1px solid black;
+  padding-left: 5px;
 }
 
 .my-footer{
-	grid-area: my-footer;
+  grid-area: my-footer;
   margin-top: 0px;
   margin-bottom: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
-	border: 1px solid black;
-	padding-left: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid black;
+  padding-left: 5px;
 }
+
+
+
 
 .header2-1{
   display: block;
