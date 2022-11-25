@@ -16,23 +16,25 @@
 }
 
 .my-header{
-	grid-area: my-header;
+  grid-area: my-header;
   margin-top: 5px;
   margin-bottom: 5px;
-	border: 1px solid black;
-	padding-left: 5px;
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .my-header-index{
-	margin-top: 5px;
-	margin-right: 5px;
-	border: 1px solid black;
-	display: inline-block;     /* 목차를 가로로 나열 할 때 */
-	text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border: 1px solid black;
+  display: inline-block;     /* 목차를 가로로 나열 할 때 */
+  text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
 }
 
 .my-nav{
 	grid-area: my-nav;
-  margin-top: 0px;
+	margin-top: 0px;
   margin-bottom: 5px;
 	border: 1px solid black;
 	padding-left: 5px;
@@ -66,6 +68,8 @@
 	margin-right: 5px;
 	border: 1px solid black;
 	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
 }
 
 .my-advertisement{

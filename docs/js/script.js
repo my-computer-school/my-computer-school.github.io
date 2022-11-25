@@ -1,6 +1,5 @@
 /*
-docs/index.html 20 - 51
-docs/html/index.html 
+
 */
 
 function fetchPage1(name){
@@ -17,6 +16,14 @@ function fetchPage2(name2){
     response.text().then(function(text){
       document.querySelector('.my-aside').innerHTML = text;
       document.querySelector('.my-article').innerHTML = '';
+    })
+  })
+}
+
+function fetchPage10(name10){
+  fetch(name10).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.my-article').innerHTML = text;
     })
   })
 }
