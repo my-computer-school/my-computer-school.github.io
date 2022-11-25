@@ -7,9 +7,9 @@
   padding-right: 5px;
   display: grid;
   grid-template-columns: 150px auto 150px;
-  grid-template-rows: minmax(48px, auto) minmax(40px, auto) minmax(90px, auto) minmax(40px, auto);
+  grid-template-rows: minmax(40px, auto) minmax(40px, auto) minmax(90px, auto) minmax(40px, auto);
   grid-template-areas: 
-  "my-header my-header  my-header"
+  "my-header my-header  my-header-right"
   "my-nav    my-nav     my-nav"
   "my-aside  my-article my-advertisement"
   "my-aside  my-footer  my-advertisement";
@@ -19,18 +19,35 @@
   grid-area: my-header;
   margin-top: 5px;
   margin-bottom: 5px;
+	margin-right: 5px;
   border: 1px solid black;
   padding-left: 5px;
   padding-right: 5px;
+	text-align: left;
+	display: inline-flex;
+	align-content: center;	
+}
+.my-header-right{
+  grid-area: my-header-right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+	display: inline-flex;     /* 글자 가로 정렬 */
+	justify-content: right;   /* 글자 가로 오른쪽으로 */
+	align-content: center;    /* 글자 테두리 높이 같게 */
 }
 .my-header-index{
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 5px;
   border: 1px solid black;
-  display: inline-block;     /* 목차를 가로로 나열 할 때 */
   text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
+  display: inline-flex;   /* 글자 세로 가운데 */
+	align-items: center;    /* 글자 세로 가운데 */
 }
+
 
 .my-nav{
   grid-area: my-nav;

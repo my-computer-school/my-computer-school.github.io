@@ -20,13 +20,47 @@ function fetchPage2(name2){
   })
 }
 
-function fetchPage10(name10){
-  fetch(name10).then(function(response){
+function fetchPage2_1(name2_1){
+  fetch(name2_1).then(function(response){
     response.text().then(function(text){
       document.querySelector('.my-article').innerHTML = text;
     })
   })
 }
+
+function fetchPage2_2(name2_2){
+  fetch(name2_2).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.my-article').innerHTML = text;
+    })
+  })
+}
+
+function fetchPage2_3(name2_3){
+  fetch(name2_3).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.my-article').innerHTML = text;
+    })
+  })
+}
+
+function fetchPage2_4(name2_4){
+  fetch(name2_4).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.my-article').innerHTML = text;
+    })
+  })
+}
+
+function fetchPage2_5(name2_5){
+  fetch(name2_5).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.my-article').innerHTML = text;
+    })
+  })
+}
+
+
 
 function fetchPage3(name3){
   fetch(name3).then(function(response){
