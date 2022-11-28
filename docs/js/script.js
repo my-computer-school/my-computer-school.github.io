@@ -73,6 +73,7 @@ function fetchPageDocJs(docJs){
     })
   })
 }
+
 function fetchPageDocMd(docMd){
   fetch(docMd).then(function(response){
     response.text().then(function(text){
@@ -88,6 +89,27 @@ function fetchPageDocMd001(docMd001){
   })
 }function fetchPageDocMd002(docMd002){
   fetch(docMd002).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+
+function fetchPageDocDatabase(docDatabase){
+  fetch(docDatabase).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.aside').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocDatabase001(docDatabase001){
+  fetch(docDatabase001).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}function fetchPageDocDatabase002(docDatabase002){
+  fetch(docDatabase002).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
@@ -116,6 +138,88 @@ function fetchPageTool(tool){
       document.querySelector('.nav').innerHTML = text;
 			document.querySelector('.aside').innerHTML = '';
       document.querySelector('.article').innerHTML = '';
+    })
+  })
+}
+function fetchPageToolVscode(toolVscode){
+  fetch(toolVscode).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.aside').innerHTML = text;
+      document.querySelector('.article').innerHTML = '';
+    })
+  })
+}function fetchPageToolVim(toolVim){
+  fetch(toolVim).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.aside').innerHTML = text;
+      document.querySelector('.article').innerHTML = '';
+    })
+  })
+}function fetchPageToolNano(toolNano){
+  fetch(toolNano).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.aside').innerHTML = text;
+      document.querySelector('.article').innerHTML = '';
+    })
+  })
+}
+
+function fetchPageApp(app){
+  fetch(app).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.nav').innerHTML = text;
+			document.querySelector('.aside').innerHTML = '';
+      document.querySelector('.article').innerHTML = '';
+    })
+  })
+}
+function fetchPageAppChecklist(appChecklist){
+  fetch(appChecklist).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.aside').innerHTML = text;
+      document.querySelector('.article').innerHTML = '';
+    })
+  })
+}
+function fetchPageAppChecklist001(appChecklist001){
+  fetch(appChecklist001).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageAppChecklist002(appChecklist002){
+  fetch(appChecklist002).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageAppChecklist003(appChecklist003){
+  fetch(appChecklist003).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageAppChecklist004(appChecklist004){
+  fetch(appChecklist004).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageAppChecklist005(appChecklist005){
+  fetch(appChecklist005).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageAppChecklist006(appChecklist006){
+  fetch(appChecklist006).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
     })
   })
 }
