@@ -70,6 +70,7 @@ function fetchPageDocJs(docJs){
   fetch(docJs).then(function(response){
     response.text().then(function(text){
       document.querySelector('.aside').innerHTML = text;
+			document.querySelector('.article').innerHTML = '';
     })
   })
 }
@@ -78,6 +79,7 @@ function fetchPageDocMd(docMd){
   fetch(docMd).then(function(response){
     response.text().then(function(text){
       document.querySelector('.aside').innerHTML = text;
+			document.querySelector('.article').innerHTML = '';
     })
   })
 }
@@ -99,6 +101,7 @@ function fetchPageDocDatabase(docDatabase){
   fetch(docDatabase).then(function(response){
     response.text().then(function(text){
       document.querySelector('.aside').innerHTML = text;
+			document.querySelector('.article').innerHTML = '';
     })
   })
 }
