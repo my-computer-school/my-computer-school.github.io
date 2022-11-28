@@ -27,7 +27,7 @@
                 body:prompt('body?')
             });
             addReq.addEventListener('success', function(event){
-                console.log(event);
+                console.log(event.target.result);
             });
         ">
         <input type="button" value="get" onclick="
