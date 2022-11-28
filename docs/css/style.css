@@ -69,9 +69,27 @@
   padding-bottom: 5px;
 }
 
-.aside-index{
+.aside-index-group{
   margin-top: 5px;
   margin-right: 5px;
+	margin-bottom: 20px;
+  border: 1px solid black;
+  display: block;            /* 목차를 세로로 나열 할 때 */
+  text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
+  white-space: nowrap;       /* 말줄임 세트 */
+  overflow: hidden;          /* 말줄임 세트 */
+  text-overflow: ellipsis;   /* 말줄임 세트 */
+}
+.aside-index-header{
+  border: 1px solid black;
+  display: block;            /* 목차를 세로로 나열 할 때 */
+  text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
+  white-space: nowrap;       /* 말줄임 세트 */
+  overflow: hidden;          /* 말줄임 세트 */
+  text-overflow: ellipsis;   /* 말줄임 세트 */
+	font-weight: 600;          /* 글자 두께 */
+}
+.aside-index-list{
   border: 1px solid black;
   display: block;            /* 목차를 세로로 나열 할 때 */
   text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
