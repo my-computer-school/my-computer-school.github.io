@@ -227,6 +227,7 @@ function fetchPageAppChecklist006(appChecklist006){
   })
 }
 
+/* 파일 위치 /docs/doc/database/002.html */
 const dbReq = indexedDB.open('opentutorials',1);
 let db;
 dbReq.addEventListener('success', function(event){
