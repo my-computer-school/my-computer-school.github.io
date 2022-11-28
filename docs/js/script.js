@@ -5,9 +5,9 @@
 function fetchPageHome(home){
   fetch(home).then(function(response){
     response.text().then(function(text){
-			document.querySelector('.myNav').innerHTML = '';
-			document.querySelector('.myAside').innerHTML = '';
-      document.querySelector('.myArticle').innerHTML = '';
+			document.querySelector('.nav').innerHTML = '';
+			document.querySelector('.aside').innerHTML = '';
+      document.querySelector('.article').innerHTML = '';
     })
   })
 }
@@ -15,9 +15,9 @@ function fetchPageHome(home){
 function fetchPageDoc(doc){
   fetch(doc).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myNav').innerHTML = text;
-			document.querySelector('.myAside').innerHTML = '';
-      document.querySelector('.myArticle').innerHTML = '';
+      document.querySelector('.nav').innerHTML = text;
+			document.querySelector('.aside').innerHTML = '';
+      document.querySelector('.article').innerHTML = '';
     })
   })
 }
@@ -25,21 +25,21 @@ function fetchPageDoc(doc){
 function fetchPageDocHtml(docHtml){
   fetch(docHtml).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myAside').innerHTML = text;
+      document.querySelector('.aside').innerHTML = text;
     })
   })
 }
 function fetchPageDocHtml001(docHtml001){
   fetch(docHtml001).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myArticle').innerHTML = text;
+      document.querySelector('.article').innerHTML = text;
     })
   })
 }
 function fetchPageDocHtml002(docHtml002){
   fetch(docHtml002).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myArticle').innerHTML = text;
+      document.querySelector('.article').innerHTML = text;
     })
   })
 }
@@ -47,21 +47,21 @@ function fetchPageDocHtml002(docHtml002){
 function fetchPageDocCss(docCss){
   fetch(docCss).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myAside').innerHTML = text;
-			document.querySelector('.myArticle').innerHTML = '';
+      document.querySelector('.aside').innerHTML = text;
+			document.querySelector('.article').innerHTML = '';
     })
   })
 }
 function fetchPageDocCss001(docCss001){
   fetch(docCss001).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myArticle').innerHTML = text;
+      document.querySelector('.article').innerHTML = text;
     })
   })
 }function fetchPageDocCss002(docCss002){
   fetch(docCss002).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myArticle').innerHTML = text;
+      document.querySelector('.article').innerHTML = text;
     })
   })
 }
@@ -69,7 +69,27 @@ function fetchPageDocCss001(docCss001){
 function fetchPageDocJs(docJs){
   fetch(docJs).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myAside').innerHTML = text;
+      document.querySelector('.aside').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocMd(docMd){
+  fetch(docMd).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.aside').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocMd001(docMd001){
+  fetch(docMd001).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}function fetchPageDocMd002(docMd002){
+  fetch(docMd002).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
     })
   })
 }
@@ -77,7 +97,7 @@ function fetchPageDocJs(docJs){
 function fetchPage2_4(name2_4){
   fetch(name2_4).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myAside').innerHTML = text;
+      document.querySelector('.aside').innerHTML = text;
     })
   })
 }
@@ -85,7 +105,7 @@ function fetchPage2_4(name2_4){
 function fetchPage2_5(name2_5){
   fetch(name2_5).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myAside').innerHTML = text;
+      document.querySelector('.aside').innerHTML = text;
     })
   })
 }
@@ -93,9 +113,9 @@ function fetchPage2_5(name2_5){
 function fetchPageTool(tool){
   fetch(tool).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.myNav').innerHTML = text;
-			document.querySelector('.myAside').innerHTML = '';
-      document.querySelector('.myArticle').innerHTML = '';
+      document.querySelector('.nav').innerHTML = text;
+			document.querySelector('.aside').innerHTML = '';
+      document.querySelector('.article').innerHTML = '';
     })
   })
 }

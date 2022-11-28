@@ -9,14 +9,14 @@
   grid-template-columns: 150px auto 150px;
   grid-template-rows: minmax(40px, auto) minmax(40px, auto) minmax(90px, auto) minmax(40px, auto);
   grid-template-areas: 
-  "myHeader myHeader  myHeaderRight"
-  "myNav    myNav     myNav"
-  "myAside  myArticle my-advertisement"
-  "myAside  my-footer my-advertisement";
+  "header header  header-right"
+  "nav    nav     nav"
+  "aside  article advertisement"
+  "aside  footer advertisement";
 }
 
-.myHeader{
-  grid-area: myHeader;
+.header{
+  grid-area: header;
   margin-top: 5px;
   margin-bottom: 5px;
 	margin-right: 5px;
@@ -27,8 +27,8 @@
 	display: inline-flex;
 	align-content: center;	
 }
-.myHeaderRight{
-  grid-area: myHeaderRight;
+.header-right{
+  grid-area: header-right;
   margin-top: 5px;
   margin-bottom: 5px;
   border: 1px solid black;
@@ -38,8 +38,8 @@
 	justify-content: right;   /* 글자 가로 오른쪽으로 */
 	align-content: center;    /* 글자 테두리 높이 같게 */
 }
-.myHeaderIndex,
-.myNavIndex{
+.header-index,
+.nav-index{
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 5px;
@@ -49,8 +49,8 @@
 	align-items: center;    /* 글자 세로 가운데 */
 }
 
-.myNav{
-  grid-area: myNav;
+.nav{
+  grid-area: nav;
   margin-top: 0px;
   margin-bottom: 5px;
   border: 1px solid black;
@@ -60,8 +60,8 @@
 	align-content: center;
 }
 
-.myAside{
-  grid-area: myAside;
+.aside{
+  grid-area: aside;
   margin-top: 0px;
   margin-bottom: 5px;
   border: 1px solid black;
@@ -69,7 +69,7 @@
   padding-bottom: 5px;
 }
 
-.myAsideIndex{
+.aside-index{
   margin-top: 5px;
   margin-right: 5px;
   border: 1px solid black;
@@ -80,8 +80,8 @@
   text-overflow: ellipsis;   /* 말줄임 세트 */
 }
 
-.myArticle{
-  grid-area: myArticle;
+.article{
+  grid-area: article;
   margin-top: 0px;
   margin-bottom: 5px;
   margin-left: 5px;
@@ -92,16 +92,16 @@
   padding-bottom: 5px;
 }
 
-.my-advertisement{
-  grid-area: my-advertisement;
+.advertisement{
+  grid-area: advertisement;
   margin-top: 0px;
   margin-bottom: 5px;
   border: 1px solid black;
   padding-left: 5px;
 }
 
-.my-footer{
-  grid-area: my-footer;
+.footer{
+  grid-area: footer;
   margin-top: 0px;
   margin-bottom: 5px;
   margin-left: 5px;
