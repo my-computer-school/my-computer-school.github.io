@@ -4,7 +4,8 @@
         let store = db.transaction('topics', 'readwrite').objectStore('topics');
         let addReq = store.add({
             title:prompt('title?'),
-            body:prompt('body?')
+            body:prompt('body?'),
+            article:prompt('article?')
         });
         addReq.addEventListener('success', function(event){
             console.log(event.target.result);
@@ -30,7 +31,8 @@
         let putReq = store.put({
             id:Number(prompt('id?')),
             title:prompt('title?'),
-            body:prompt('body?')
+            body:prompt('body?'),
+            article:prompt('article?')
         });
         putReq.addEventListener('success',function(event){
             console.log(event);

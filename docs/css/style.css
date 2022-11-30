@@ -44,6 +44,8 @@
   margin-bottom: 5px;
   margin-right: 5px;
   border: 1px solid black;
+	padding-left: 3px;
+	padding-right: 3px;
   text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
   display: inline-flex;   /* 글자 세로 가운데 */
 	align-items: center;    /* 글자 세로 가운데 */
@@ -73,7 +75,6 @@
   margin-top: 5px;
   margin-right: 5px;
 	margin-bottom: 20px;
-  border: 1px solid black;
   display: block;            /* 목차를 세로로 나열 할 때 */
   text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
   white-space: nowrap;       /* 말줄임 세트 */
@@ -81,21 +82,21 @@
   text-overflow: ellipsis;   /* 말줄임 세트 */
 }
 .aside-index-header{
-  border: 1px solid black;
   display: block;            /* 목차를 세로로 나열 할 때 */
   text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
   white-space: nowrap;       /* 말줄임 세트 */
   overflow: hidden;          /* 말줄임 세트 */
   text-overflow: ellipsis;   /* 말줄임 세트 */
+	font-size: large;          /* 글자 크기 */
 	font-weight: 600;          /* 글자 두께 */
 }
 .aside-index-list{
-  border: 1px solid black;
-  display: block;            /* 목차를 세로로 나열 할 때 */
-  text-decoration: none;     /* 하이퍼링크 선 없앨 때 */
-  white-space: nowrap;       /* 말줄임 세트 */
-  overflow: hidden;          /* 말줄임 세트 */
-  text-overflow: ellipsis;   /* 말줄임 세트 */
+  margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 20px;
+}
+.aside-index-item{
+	text-decoration: none;
 }
 
 .article{

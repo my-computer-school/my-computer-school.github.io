@@ -74,6 +74,42 @@ function fetchPageDocJs(docJs){
     })
   })
 }
+function fetchPageDocJsDocument1(docJsdocument1){
+  fetch(docJsdocument1).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsDocument2(docJsdocument2){
+  fetch(docJsdocument2).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsDocument3(docJsdocument3){
+  fetch(docJsdocument3).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+
+function fetchPageDocJs003(docJs003){
+  fetch(docJs003).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJs004(docJs004){
+  fetch(docJs004).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
 
 function fetchPageDocMd(docMd){
   fetch(docMd).then(function(response){
@@ -227,6 +263,16 @@ function fetchPageAppChecklist006(appChecklist006){
   })
 }
 
+function colorRed(){
+	document.querySelector('.color-red').style.color = 'red';
+}
+
+
+
+
+
+
+
 /* 파일 위치 /docs/doc/database/002.html */
 const dbReq = indexedDB.open('opentutorials',1);
 let db;
@@ -250,24 +296,9 @@ dbReq.addEventListener('upgradeneeded', function(event){
 
 
 
-function fetchPage4(name4){
-  fetch(name4).then(function(response){
-    response.text().then(function(text){
-      document.querySelector('.header2').innerHTML = text;
-    })
-  })
-}
 
-function fetchPage5(name5){
-  fetch(name5).then(function(response){
-    response.text().then(function(text){
-      document.querySelector('.article1').innerHTML = text;
-    })
-  })
-}
 
-const name15 = "Copyright 2021 - 2022"
-document.querySelector('.footer1').innerHTML = name15;
+
 
 
 
