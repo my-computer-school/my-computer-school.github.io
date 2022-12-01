@@ -74,22 +74,43 @@ function fetchPageDocJs(docJs){
     })
   })
 }
-function fetchPageDocJsDocument1(docJsdocument1){
-  fetch(docJsdocument1).then(function(response){
+function fetchPageDocJsOutput1(docJsOutput1){
+  fetch(docJsOutput1).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageDocJsDocument2(docJsdocument2){
-  fetch(docJsdocument2).then(function(response){
+function fetchPageDocJsOutput2(docJsOutput2){
+  fetch(docJsOutput2).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageDocJsDocument3(docJsdocument3){
-  fetch(docJsdocument3).then(function(response){
+function fetchPageDocJsOutput3(docJsOutput3){
+  fetch(docJsOutput3).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsDocument1(docJsDocument1){
+  fetch(docJsDocument1).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsDocument2(docJsDocument2){
+  fetch(docJsDocument2).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsDocument3(docJsDocument3){
+  fetch(docJsDocument3).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
@@ -857,3 +878,11 @@ function Ct6Add(){
 	}
 }
 
+function jsOutputAlert(){
+	alert('hi');
+}
+
+function jsOutputAlertToday(){
+	let jsOutputAlertToday = new Date();
+  alert(jsOutputAlertToday);
+}
