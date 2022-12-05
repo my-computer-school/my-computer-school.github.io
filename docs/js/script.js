@@ -29,20 +29,71 @@ function fetchPageDocHtml(docHtml){
     })
   })
 }
-function fetchPageDocHtml001(docHtml001){
-  fetch(docHtml001).then(function(response){
+function fetchPageDocHtmlTag1(docHtmlTag1){
+  fetch(docHtmlTag1).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageDocHtml002(docHtml002){
-  fetch(docHtml002).then(function(response){
+function fetchPageDocHtmlTag2(docHtmlTag2){
+  fetch(docHtmlTag2).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}function fetchPageDocHtmlTag3(docHtmlTag3){
+  fetch(docHtmlTag3).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}function fetchPageDocHtmlTag4(docHtmlTag4){
+  fetch(docHtmlTag4).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}function fetchPageDocHtmlTag5(docHtmlTag5){
+  fetch(docHtmlTag5).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
   })
 }
+function fetchPageDocHtmlAttribute1(docHtmlAttribute1){
+  fetch(docHtmlAttribute1).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocHtmlAttribute2(docHtmlAttribute2){
+  fetch(docHtmlAttribute2).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}function fetchPageDocHtmlAttribute3(docHtmlAttribute3){
+  fetch(docHtmlAttribute3).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}function fetchPageDocHtmlAttribute4(docHtmlAttribute4){
+  fetch(docHtmlAttribute4).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}function fetchPageDocHtmlAttribute5(docHtmlAttribute5){
+  fetch(docHtmlAttribute5).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+
 
 function fetchPageDocCss(docCss){
   fetch(docCss).then(function(response){
@@ -95,6 +146,50 @@ function fetchPageDocJsOutput3(docJsOutput3){
     })
   })
 }
+function fetchPageDocJsOutput4(docJsOutput4){
+  fetch(docJsOutput4).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsOutput5(docJsOutput5){
+  fetch(docJsOutput5).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsOutput6(docJsOutput6){
+  fetch(docJsOutput6).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+
+function fetchPageDocJsIdentifier1(docJsIdentifier1){
+  fetch(docJsIdentifier1).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsIdentifier2(docJsIdentifier2){
+  fetch(docJsIdentifier2).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsIdentifier3(docJsIdentifier3){
+  fetch(docJsIdentifier3).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+
 function fetchPageDocJsDocument1(docJsDocument1){
   fetch(docJsDocument1).then(function(response){
     response.text().then(function(text){
@@ -886,3 +981,20 @@ function jsOutputAlertToday(){
 	let jsOutputAlertToday = new Date();
   alert(jsOutputAlertToday);
 }
+
+function jsOutputConfirm(){
+  confirm('hi');
+}
+
+function jsOutputPrompt(){
+  prompt('hi');
+}
+
+function jsOutputDocumentWrite(){
+  document.write('hi');
+}
+
+function jsOutputConsoleLog(){
+  console.log('hi');
+}
+
