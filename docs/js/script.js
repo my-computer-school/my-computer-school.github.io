@@ -221,8 +221,8 @@ function fetchPageDocJsWindow2(docJsWindow2){
   })
 }
 
-function fetchPageDocMd(docMd){
-  fetch(docMd).then(function(response){
+function fetchPageDocMakedown(docMakedown){
+  fetch(docMakedown).then(function(response){
     response.text().then(function(text){
       document.querySelector('.aside').innerHTML = text;
 			document.querySelector('.article').innerHTML = '';
