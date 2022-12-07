@@ -125,43 +125,43 @@ function fetchPageDocJs(docJs){
     })
   })
 }
-function fetchPageDocJsOutput1(docJsOutput1){
-  fetch(docJsOutput1).then(function(response){
+function fetchPageDocJsOutputIntroduction(docJsOutputIntroduction){
+  fetch(docJsOutputIntroduction).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageDocJsOutput2(docJsOutput2){
-  fetch(docJsOutput2).then(function(response){
+function fetchPageDocJsWindowAlert(docJsWindowAlert){
+  fetch(docJsWindowAlert).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageDocJsOutput3(docJsOutput3){
-  fetch(docJsOutput3).then(function(response){
+function fetchPageDocJsWindowConfirm(docJsWindowConfirm){
+  fetch(docJsWindowConfirm).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageDocJsOutput4(docJsOutput4){
-  fetch(docJsOutput4).then(function(response){
+function fetchPageDocJsWindowPrompt(docJsWindowPrompt){
+  fetch(docJsWindowPrompt).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageDocJsOutput5(docJsOutput5){
-  fetch(docJsOutput5).then(function(response){
+function fetchPageDocJsDocumentWrite(docJsDocumentWrite){
+  fetch(docJsDocumentWrite).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageDocJsOutput6(docJsOutput6){
-  fetch(docJsOutput6).then(function(response){
+function fetchPageDocJsWindowConsoleLog(docJsWindowConsoleLog){
+  fetch(docJsWindowConsoleLog).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
@@ -175,23 +175,10 @@ function fetchPageDocJsIdentifier1(docJsIdentifier1){
     })
   })
 }
-function fetchPageDocJsIdentifier2(docJsIdentifier2){
-  fetch(docJsIdentifier2).then(function(response){
-    response.text().then(function(text){
-			document.querySelector('.article').innerHTML = text;
-    })
-  })
-}
-function fetchPageDocJsIdentifier3(docJsIdentifier3){
-  fetch(docJsIdentifier3).then(function(response){
-    response.text().then(function(text){
-			document.querySelector('.article').innerHTML = text;
-    })
-  })
-}
 
-function fetchPageDocJsDocument1(docJsDocument1){
-  fetch(docJsDocument1).then(function(response){
+
+function fetchPageDocJsDocumentIntroduction(docJsDocumentIntroduction){
+  fetch(docJsDocumentIntroduction).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
@@ -211,16 +198,23 @@ function fetchPageDocJsDocument3(docJsDocument3){
     })
   })
 }
-
-function fetchPageDocJs003(docJs003){
-  fetch(docJs003).then(function(response){
+function fetchPageDocJsDocument4(docJsDocument4){
+  fetch(docJsDocument4).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageDocJs004(docJs004){
-  fetch(docJs004).then(function(response){
+
+function fetchPageDocJsWindowIntroduction(docJsWindowIntroduction){
+  fetch(docJsWindowIntroduction).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsWindow2(docJsWindow2){
+  fetch(docJsWindow2).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
@@ -973,28 +967,38 @@ function Ct6Add(){
 	}
 }
 
-function jsOutputAlert(){
-	alert('hi');
+function jsWindowAlert(){
+  window.alert('hi');
 }
 
-function jsOutputAlertToday(){
-	let jsOutputAlertToday = new Date();
-  alert(jsOutputAlertToday);
+function jsWindowAlertToday(){
+  let jsWindowAlertToday = new Date();
+  window.alert(jsWindowAlertToday);
 }
 
-function jsOutputConfirm(){
-  confirm('hi');
+function jsWindowConfirm(){
+  window.confirm('hi');
 }
 
-function jsOutputPrompt(){
-  prompt('hi');
+function jsWindowPrompt(){
+  window.prompt('hi');
 }
 
-function jsOutputDocumentWrite(){
+function jsDocumentWrite(){
   document.write('hi');
 }
 
-function jsOutputConsoleLog(){
-  console.log('hi');
+function jsWindowConsoleLog(){
+  window.console.log('hi');
 }
 
+function jsDocument4() {
+  let currentYear = prompt('현재 연도를 입력하세요. (YYYY)', '');
+	let birthYear = prompt('태어난 연도를 입력하세요. (YYYY)', '');
+	let age = currentYear - birthYear + 1;
+	alert('당신의 나이는 ' + age + '세 입니다.');
+}
+
+function jsWindow2() {
+	window.prompt('태어난 연도를 입력하세요', '');
+}
