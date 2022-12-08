@@ -5,8 +5,12 @@
 function fetchPageHome(home){
   fetch(home).then(function(response){
     response.text().then(function(text){
-			document.querySelector('.nav').innerHTML = '';
-			document.querySelector('.aside').innerHTML = '';
+      document.querySelector('.homeBold').style.backgroundColor = '#eee';
+      document.querySelector('.docBold').style.backgroundColor = '';
+      document.querySelector('.toolBold').style.backgroundColor = '';
+      document.querySelector('.appBold').style.backgroundColor = '';
+      document.querySelector('.nav').innerHTML = '';
+      document.querySelector('.aside').innerHTML = '';
       document.querySelector('.article').innerHTML = '';
     })
   })
@@ -15,8 +19,12 @@ function fetchPageHome(home){
 function fetchPageDoc(doc){
   fetch(doc).then(function(response){
     response.text().then(function(text){
+      document.querySelector('.homeBold').style.backgroundColor = '';
+      document.querySelector('.docBold').style.backgroundColor = '#eee';
+      document.querySelector('.toolBold').style.backgroundColor = '';
+      document.querySelector('.appBold').style.backgroundColor = '';
       document.querySelector('.nav').innerHTML = text;
-			document.querySelector('.aside').innerHTML = '';
+      document.querySelector('.aside').innerHTML = '';
       document.querySelector('.article').innerHTML = '';
     })
   })
@@ -25,6 +33,11 @@ function fetchPageDoc(doc){
 function fetchPageDocHtml(docHtml){
   fetch(docHtml).then(function(response){
     response.text().then(function(text){
+      document.querySelector('.htmlBold').style.backgroundColor = '#eee';
+      document.querySelector('.cssBold').style.backgroundColor = '';
+      document.querySelector('.jsBold').style.backgroundColor = '';
+      document.querySelector('.makedownBold').style.backgroundColor = '';
+      document.querySelector('.databaseBold').style.backgroundColor = '';
       document.querySelector('.aside').innerHTML = text;
     })
   })
@@ -98,19 +111,32 @@ function fetchPageDocHtmlAttribute2(docHtmlAttribute2){
 function fetchPageDocCss(docCss){
   fetch(docCss).then(function(response){
     response.text().then(function(text){
+      document.querySelector('.htmlBold').style.backgroundColor = '';
+      document.querySelector('.cssBold').style.backgroundColor = '#eee';
+      document.querySelector('.jsBold').style.backgroundColor = '';
+      document.querySelector('.makedownBold').style.backgroundColor = '';
+      document.querySelector('.databaseBold').style.backgroundColor = '';			
       document.querySelector('.aside').innerHTML = text;
-			document.querySelector('.article').innerHTML = '';
+      document.querySelector('.article').innerHTML = '';
     })
   })
 }
-function fetchPageDocCss001(docCss001){
-  fetch(docCss001).then(function(response){
+function fetchPageDocCssPropertyIntroduction(docCssPropertyIntroduction){
+  fetch(docCssPropertyIntroduction).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
   })
-}function fetchPageDocCss002(docCss002){
-  fetch(docCss002).then(function(response){
+}
+function fetchPageDocCssPropertyBorder(docCssPropertyBorder){
+  fetch(docCssPropertyBorder).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocCssPropertyText(docCssPropertyText){
+  fetch(docCssPropertyText).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
@@ -120,6 +146,11 @@ function fetchPageDocCss001(docCss001){
 function fetchPageDocJs(docJs){
   fetch(docJs).then(function(response){
     response.text().then(function(text){
+      document.querySelector('.htmlBold').style.backgroundColor = '';
+      document.querySelector('.cssBold').style.backgroundColor = '';
+      document.querySelector('.jsBold').style.backgroundColor = '#eee';
+      document.querySelector('.makedownBold').style.backgroundColor = '';
+      document.querySelector('.databaseBold').style.backgroundColor = '';
       document.querySelector('.aside').innerHTML = text;
 			document.querySelector('.article').innerHTML = '';
     })
@@ -198,10 +229,17 @@ function fetchPageDocJsDocument3(docJsDocument3){
     })
   })
 }
-function fetchPageDocJsDocument4(docJsDocument4){
-  fetch(docJsDocument4).then(function(response){
+function fetchPageDocJsDocumentAgeCalculation(docJsDocumentAgeCalculation){
+  fetch(docJsDocumentAgeCalculation).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsDocumentCurrentPageBold(docJsDocumentCurrentPageBold){
+  fetch(docJsDocumentCurrentPageBold).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
     })
   })
 }
@@ -224,6 +262,11 @@ function fetchPageDocJsWindow2(docJsWindow2){
 function fetchPageDocMakedown(docMakedown){
   fetch(docMakedown).then(function(response){
     response.text().then(function(text){
+      document.querySelector('.htmlBold').style.backgroundColor = '';
+      document.querySelector('.cssBold').style.backgroundColor = '';
+      document.querySelector('.jsBold').style.backgroundColor = '';
+      document.querySelector('.makedownBold').style.backgroundColor = '#eee';
+      document.querySelector('.databaseBold').style.backgroundColor = '';
       document.querySelector('.aside').innerHTML = text;
 			document.querySelector('.article').innerHTML = '';
     })
@@ -246,6 +289,11 @@ function fetchPageDocMd001(docMd001){
 function fetchPageDocDatabase(docDatabase){
   fetch(docDatabase).then(function(response){
     response.text().then(function(text){
+      document.querySelector('.htmlBold').style.backgroundColor = '';
+      document.querySelector('.cssBold').style.backgroundColor = '';
+      document.querySelector('.jsBold').style.backgroundColor = '';
+      document.querySelector('.makedownBold').style.backgroundColor = '';
+      document.querySelector('.databaseBold').style.backgroundColor = '#eee';
       document.querySelector('.aside').innerHTML = text;
 			document.querySelector('.article').innerHTML = '';
     })
@@ -284,8 +332,12 @@ function fetchPage2_5(name2_5){
 function fetchPageTool(tool){
   fetch(tool).then(function(response){
     response.text().then(function(text){
+      document.querySelector('.homeBold').style.backgroundColor = '';
+      document.querySelector('.docBold').style.backgroundColor = '';
+      document.querySelector('.toolBold').style.backgroundColor = '#eee';
+      document.querySelector('.appBold').style.backgroundColor = '';
       document.querySelector('.nav').innerHTML = text;
-			document.querySelector('.aside').innerHTML = '';
+      document.querySelector('.aside').innerHTML = '';
       document.querySelector('.article').innerHTML = '';
     })
   })
@@ -293,21 +345,30 @@ function fetchPageTool(tool){
 function fetchPageToolVscode(toolVscode){
   fetch(toolVscode).then(function(response){
     response.text().then(function(text){
-			document.querySelector('.aside').innerHTML = text;
+      document.querySelector('.vscodeBold').style.backgroundColor = '#eee';
+      document.querySelector('.vimBold').style.backgroundColor = '';
+      document.querySelector('.nanoBold').style.backgroundColor = '';
+      document.querySelector('.aside').innerHTML = text;
       document.querySelector('.article').innerHTML = '';
     })
   })
 }function fetchPageToolVim(toolVim){
   fetch(toolVim).then(function(response){
     response.text().then(function(text){
-			document.querySelector('.aside').innerHTML = text;
+      document.querySelector('.vscodeBold').style.backgroundColor = '';
+      document.querySelector('.vimBold').style.backgroundColor = '#eee';
+      document.querySelector('.nanoBold').style.backgroundColor = '';
+      document.querySelector('.aside').innerHTML = text;
       document.querySelector('.article').innerHTML = '';
     })
   })
 }function fetchPageToolNano(toolNano){
   fetch(toolNano).then(function(response){
     response.text().then(function(text){
-			document.querySelector('.aside').innerHTML = text;
+      document.querySelector('.vscodeBold').style.backgroundColor = '';
+      document.querySelector('.vimBold').style.backgroundColor = '';
+      document.querySelector('.nanoBold').style.backgroundColor = '#eee';
+      document.querySelector('.aside').innerHTML = text;
       document.querySelector('.article').innerHTML = '';
     })
   })
@@ -316,8 +377,12 @@ function fetchPageToolVscode(toolVscode){
 function fetchPageApp(app){
   fetch(app).then(function(response){
     response.text().then(function(text){
+      document.querySelector('.homeBold').style.backgroundColor = '';
+      document.querySelector('.docBold').style.backgroundColor = '';
+      document.querySelector('.toolBold').style.backgroundColor = '';
+      document.querySelector('.appBold').style.backgroundColor = '#eee';
       document.querySelector('.nav').innerHTML = text;
-			document.querySelector('.aside').innerHTML = '';
+      document.querySelector('.aside').innerHTML = '';
       document.querySelector('.article').innerHTML = '';
     })
   })
@@ -325,7 +390,8 @@ function fetchPageApp(app){
 function fetchPageAppChecklist(appChecklist){
   fetch(appChecklist).then(function(response){
     response.text().then(function(text){
-			document.querySelector('.aside').innerHTML = text;
+      document.querySelector('.checklistBold').style.backgroundColor = '#eee';
+      document.querySelector('.aside').innerHTML = text;
       document.querySelector('.article').innerHTML = '';
     })
   })
@@ -992,11 +1058,11 @@ function jsWindowConsoleLog(){
   window.console.log('hi');
 }
 
-function jsDocument4() {
-  let currentYear = prompt('현재 연도를 입력하세요. (YYYY)', '');
-	let birthYear = prompt('태어난 연도를 입력하세요. (YYYY)', '');
+function jsDocumentAgeCalculation() {
+  let currentYear = prompt('please enter current year. (YYYY)', '');
+	let birthYear = prompt('please enter your birth year. (YYYY)', '');
 	let age = currentYear - birthYear + 1;
-	alert('당신의 나이는 ' + age + '세 입니다.');
+	alert('your are ' + age + ' years old.');
 }
 
 function jsWindow2() {
