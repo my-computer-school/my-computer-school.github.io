@@ -121,8 +121,8 @@ function fetchPageDocCss(docCss){
     })
   })
 }
-function fetchPageDocCssPropertyIntroduction(docCssPropertyIntroduction){
-  fetch(docCssPropertyIntroduction).then(function(response){
+function fetchPageDocCssPropertyOverview(docCssPropertyOverview){
+  fetch(docCssPropertyOverview).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
@@ -156,8 +156,8 @@ function fetchPageDocJs(docJs){
     })
   })
 }
-function fetchPageDocJsOutputIntroduction(docJsOutputIntroduction){
-  fetch(docJsOutputIntroduction).then(function(response){
+function fetchPageDocJsOutputOverview(docJsOutputOverview){
+  fetch(docJsOutputOverview).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
@@ -199,8 +199,16 @@ function fetchPageDocJsWindowConsoleLog(docJsWindowConsoleLog){
   })
 }
 
-function fetchPageDocJsIdentifier1(docJsIdentifier1){
-  fetch(docJsIdentifier1).then(function(response){
+function fetchPageDocJsIdentifierOverview(docJsIdentifierOverview){
+  fetch(docJsIdentifierOverview).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+
+function fetchPageDocJsDataTypesOverview(docJsDataTypesOverview){
+  fetch(docJsDataTypesOverview).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
@@ -208,8 +216,8 @@ function fetchPageDocJsIdentifier1(docJsIdentifier1){
 }
 
 
-function fetchPageDocJsDocumentIntroduction(docJsDocumentIntroduction){
-  fetch(docJsDocumentIntroduction).then(function(response){
+function fetchPageDocJsDocumentOverview(docJsDocumentOverview){
+  fetch(docJsDocumentOverview).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
@@ -244,8 +252,8 @@ function fetchPageDocJsDocumentCurrentPageBold(docJsDocumentCurrentPageBold){
   })
 }
 
-function fetchPageDocJsWindowIntroduction(docJsWindowIntroduction){
-  fetch(docJsWindowIntroduction).then(function(response){
+function fetchPageDocJsWindowOverview(docJsWindowOverview){
+  fetch(docJsWindowOverview).then(function(response){
     response.text().then(function(text){
 			document.querySelector('.article').innerHTML = text;
     })
@@ -396,48 +404,22 @@ function fetchPageAppChecklist(appChecklist){
     })
   })
 }
-function fetchPageAppChecklist001(appChecklist001){
-  fetch(appChecklist001).then(function(response){
+
+function fetchPageAppChecklistFireDrillSetup(appChecklistFireDrillSetup){
+  fetch(appChecklistFireDrillSetup).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageAppChecklist002(appChecklist002){
-  fetch(appChecklist002).then(function(response){
+function fetchPageAppChecklistFireDrillForm(appChecklistFireDrillForm){
+  fetch(appChecklistFireDrillForm).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
   })
 }
-function fetchPageAppChecklist003(appChecklist003){
-  fetch(appChecklist003).then(function(response){
-    response.text().then(function(text){
-      document.querySelector('.article').innerHTML = text;
-    })
-  })
-}
-function fetchPageAppChecklist004(appChecklist004){
-  fetch(appChecklist004).then(function(response){
-    response.text().then(function(text){
-      document.querySelector('.article').innerHTML = text;
-    })
-  })
-}
-function fetchPageAppChecklist005(appChecklist005){
-  fetch(appChecklist005).then(function(response){
-    response.text().then(function(text){
-      document.querySelector('.article').innerHTML = text;
-    })
-  })
-}
-function fetchPageAppChecklist006(appChecklist006){
-  fetch(appChecklist006).then(function(response){
-    response.text().then(function(text){
-      document.querySelector('.article').innerHTML = text;
-    })
-  })
-}
+
 
 function colorRed(){
 	document.querySelector('.color-red').style.color = 'red';
