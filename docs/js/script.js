@@ -215,6 +215,42 @@ function fetchPageDocJsDataTypesOverview(docJsDataTypesOverview){
   })
 }
 
+function fetchPageDocJsOperatorsOverview(docJsOperatorsOverview){
+  fetch(docJsOperatorsOverview).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+
+function fetchPageDocJsOperators1(docJsOperators1){
+  fetch(docJsOperators1).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsOperators2(docJsOperators2){
+  fetch(docJsOperators2).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsOperators3(docJsOperators3){
+  fetch(docJsOperators3).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetchPageDocJsOperators4(docJsOperators4){
+  fetch(docJsOperators4).then(function(response){
+    response.text().then(function(text){
+			document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
 
 function fetchPageDocJsDocumentOverview(docJsDocumentOverview){
   fetch(docJsDocumentOverview).then(function(response){
