@@ -142,6 +142,13 @@ function fetchPageDocCssPropertyText(docCssPropertyText){
     })
   })
 }
+function fetchPageDocCssPropertyOverflow(docCssPropertyOverflow){
+  fetch(docCssPropertyOverflow).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
 
 function fetchPageDocJs(docJs){
   fetch(docJs).then(function(response){
@@ -1086,3 +1093,6 @@ function jsDocumentAgeCalculation() {
 function jsWindow2() {
 	window.prompt('태어난 연도를 입력하세요', '');
 }
+
+document.querySelectorAll('.colorscripter_code').forEach(function(e){e.classList.add('notranslate');});
+javascript:(function(){document.querySelectorAll('.colorscripter_code').forEach(function(e){e.classList.add('notranslate');});})();
