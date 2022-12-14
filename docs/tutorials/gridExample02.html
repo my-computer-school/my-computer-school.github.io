@@ -11,33 +11,22 @@ body {
   height: 100%;
   background-color: gray;
 }
-#main-container {
+.display_grid {
+  margin: 10px;
   background-color: bisque;
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 .row-1 {
+  margin: 10px;
   background-color: cadetblue;
   overflow: auto;
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-}
-.row-1-1 {
-  background-color: crimson;
-}
-.row-1-2 {
-  background-color: darkkhaki;
 }
 .row-2 {
+  margin: 10px;
   background-color: chocolate;
   overflow: auto;
-}
-.row-2-1 {
-  background-color: darkmagenta;
-}
-.row-2-2 {
-  background-color: darkslateblue;
 }
 .test-height {
     height: 1000px;
@@ -45,22 +34,12 @@ body {
 </style>
 </head>
 <body>
-  <div id="main-container">
+  <div class="display_grid">
     <div class="row-1">
-      <div class="row-1-1">
-        <div class="test-height">row-1-1</div>
-      </div>
-      <div class="row-1-2">
-        <div class="test-height">row-1-2</div>
-      </div>
+      <div class="test-height">row-1</div>
     </div>
     <div class="row-2">
-      <div class="row-2-1">
-        <div class="test-height">row-2-1</div>
-      </div>
-      <div class="row-2-2">
-        <div class="test-height">row-2-2</div>
-      </div>
+      <div class="test-height">row-2</div>
     </div>
   </div>
 </body>
