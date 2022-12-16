@@ -6,30 +6,38 @@
   margin: 0;
   padding: 0;
 }
-html,
 body {
   height: 100%;
-  background-color: gray;
+  background-color: blue;
 }
 .display_grid {
-  margin: 10px;
+  margin-top: 10px;
   background-color: bisque;
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr;
 }
 .row-1 {
-  margin: 10px;
+  margin: 0px;
   background-color: cadetblue;
-  overflow: auto;
 }
 .row-2 {
-  margin: 10px;
+  margin: 0px;
   background-color: chocolate;
   overflow: auto;
 }
+.row-3 {
+  margin: 0px;
+  background-color: coral;
+  overflow: auto;
+}
+.row-4 {
+  margin: 5px;
+  background-color: coral;
+  overflow: auto;
+}
 .test-height {
-    height: 1000px;
+    height: 20px;
 }
 </style>
 </head>
@@ -40,6 +48,12 @@ body {
     </div>
     <div class="row-2">
       <div class="test-height">row-2</div>
+    </div>
+    <div class="row-3">
+      <div class="test-height">row-3</div>
+    </div>
+    <div class="row-4">
+      <div class="test-height">row-4</div>
     </div>
   </div>
 </body>
