@@ -170,8 +170,8 @@ function fetchPageDocCssPropertyOverflow(docCssPropertyOverflow){
     })
   })
 }
-function fetchPageDocCssGridOverflow(docCssGridOverflow){
-  fetch(docCssGridOverflow).then(function(response){
+function fetchPageDocCssGridOverview(docCssGridOverview){
+  fetch(docCssGridOverview).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })

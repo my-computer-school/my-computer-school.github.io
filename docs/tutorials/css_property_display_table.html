@@ -4,7 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>display</title>
     <style>
-
       .table {
         margin: 0;
         padding: 0;
@@ -13,9 +12,13 @@
         text-align: center;
         border-spacing: 20px;
       }
+      .table_row {
+        display: table-row;
+        height: 100%;
+      }
       .table_cell {
         display: table-cell;
-        height: 100px;
+        height: 100%;
         border: 1px solid #ccc;
         vertical-align: middle;
         list-style-type: none;
@@ -23,10 +26,22 @@
     </style>
   </head>
   <body>
-    <ul class="table">
-      <li class="table_cell">item 1</li>
-      <li class="table_cell">item 2</li>
-      <li class="table_cell">item 3</li>
-    </ul>
+    <div class="table">
+      <div class="table_row">
+        <div class="table_cell">cell 1</div>
+        <div class="table_cell">cell 2</div>
+        <div class="table_cell">cell 3</div>
+      </div>
+      <div class="table_row">
+        <div class="table_cell">cell 3</div>
+        <div class="table_cell">cell 4</div>
+        <div class="table_cell">cell 5</div>
+      </div>
+      <div class="table_row">
+        <div class="table_cell">cell 6</div>
+        <div class="table_cell">cell 7</div>
+        <div class="table_cell">cell 8</div>
+      </div>
+    </div>
   </body>
 </html>

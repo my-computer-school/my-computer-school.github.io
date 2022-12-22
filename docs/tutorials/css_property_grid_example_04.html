@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <style>
+body {
+  margin: 0px;
+}
+.header {
+  grid-area: header;
+  position: sticky;
+  top: 0px;
+  background-color: #999;
+  color: #fff;
+}
+.sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: 67px;
+  display: block !important;
+  height: calc(100vh - 0vh);
+  overflow-y: auto;
+}
+.content {
+  grid-area: content;
+}
+.sidebar2 {
+  grid-area: sidebar2;
+}
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 120px auto 120px;
+  grid-template-areas:
+  "header  header  header"
+  "sidebar content sidebar2"
+  "footer  footer  footer";
+}
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; 
+}
+
+@media only screen and (max-width: 600px)   {
+  .wrapper {
+    grid-gap: 5px;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+    "header   header"
+    "sidebar  content"
+    "sidebar2 sidebar2"
+    "footer   footer";
+  }
+}
+
+@media only screen and (max-width: 500px)  {
+.wrapper {
+  grid-gap: 2px;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "sidebar2"
+    "footer"
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box header">Header</div>
+    <div class="box sidebar">Sidebar Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis sed natus minima atque ad molestiae itaque animi dignissimos fugit, illo excepturi fugiat eligendi tempora, eos voluptatum voluptas. Nulla, excepturi rerum.</div>
+    <div class="box sidebar2">Sidebar 2</div>
+    <div class="box content">Content More content than we had before so this column is now quite tall. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quae, animi reprehenderit explicabo optio sed, praesentium nulla velit natus quo, corrupti omnis? Reprehenderit ipsum non asperiores temporibus, consequatur explicabo eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente doloremque, labore aspernatur veniam excepturi tempora natus maiores! Unde eum dignissimos mollitia molestias amet libero harum distinctio, autem totam. Blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rem vitae quam praesentium veniam excepturi magni aspernatur voluptas, provident vero laboriosam officia voluptatem iusto ipsam nostrum recusandae id, quas alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde magni nemo dolorem nulla consequuntur nihil velit est maxime, reprehenderit totam placeat sunt asperiores voluptas vero voluptates ab, quos quam!</div>
+    <div class="box footer">Footer</div>
+  </div>
+</body>
+</html>
