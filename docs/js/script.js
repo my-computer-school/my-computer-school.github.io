@@ -49,26 +49,26 @@ function fetchPageDocHtmlTag1(docHtmlTag1){
     })
   })
 }
-function fetchPageDocHtmlTag2(docHtmlTag2){
-  fetch(docHtmlTag2).then(function(response){
+function fetch_doc_html_tag_iframe(doc_html_tag_iframe){
+  fetch(doc_html_tag_iframe).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
   })
-}function fetchPageDocHtmlTag3(docHtmlTag3){
-  fetch(docHtmlTag3).then(function(response){
+}function fetch_doc_html_tag_header(doc_html_tag_header){
+  fetch(doc_html_tag_header).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
   })
-}function fetchPageDocHtmlTag4(docHtmlTag4){
-  fetch(docHtmlTag4).then(function(response){
+}function fetch_doc_html_tag_nav(doc_html_tag_nav){
+  fetch(doc_html_tag_nav).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
   })
-}function fetchPageDocHtmlTag5(docHtmlTag5){
-  fetch(docHtmlTag5).then(function(response){
+}function fetch_doc_html_tag_main(doc_html_tag_main){
+  fetch(doc_html_tag_main).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
@@ -137,6 +137,13 @@ function fetchPageDocCssPropertyBorder(docCssPropertyBorder){
 }
 function fetchPageDocCssPropertyDisplay(docCssPropertyDisplay){
   fetch(docCssPropertyDisplay).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetch_doc_css_property_flex(doc_css_property_flex){
+  fetch(doc_css_property_flex).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })
@@ -538,6 +545,15 @@ function fetchPageAppChecklist(appChecklist){
     })
   })
 }
+function fetch_app_web(app_web){
+  fetch(app_web).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.checklistBold').style.backgroundColor = '#eee';
+      document.querySelector('.aside').innerHTML = text;
+      document.querySelector('.article').innerHTML = '';
+    })
+  })
+}
 
 function fetchPageAppChecklistFireDrillSetup(appChecklistFireDrillSetup){
   fetch(appChecklistFireDrillSetup).then(function(response){
@@ -548,6 +564,13 @@ function fetchPageAppChecklistFireDrillSetup(appChecklistFireDrillSetup){
 }
 function fetchPageAppChecklistFireDrillForm(appChecklistFireDrillForm){
   fetch(appChecklistFireDrillForm).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
+function fetch_app_web_example_01(app_web_example_01){
+  fetch(app_web_example_01).then(function(response){
     response.text().then(function(text){
       document.querySelector('.article').innerHTML = text;
     })

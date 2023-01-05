@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <style>
+    #wrap {
+      width: 960; 
+      height: 800px;
+      margin: 0 auto;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      width: 960px; 
+      height: 100px; 
+      background-color: #111;
+    }
+    nav {
+      width: 960px; 
+      height: 100px; 
+      background-color: #222;
+    }
+    aside {
+      width: 360px; 
+      height: 500px; 
+      background-color: #333;
+      float: left;
+    }
+    article {
+      width: 600px; 
+      height: 500px; 
+      background-color: #444;
+      float: left;
+    }
+    footer {
+      width: 960px; 
+      height: 100px; 
+      background-color: #555;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header>header</header>
+    <nav>nav</nav>
+    <main>
+      <aside>aside</aside>
+      <article>article</article>
+    </main>
+    <footer>footer</footer>
+  </div>
+</body>
+</html>

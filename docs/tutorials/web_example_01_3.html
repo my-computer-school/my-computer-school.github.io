@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body {
+  
+}   
+a, a:link, a:visited {
+  color: inherit;  /* 부모요소 상속 */
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container_header {
+  width: 1140px;
+  margin: 0 auto;  /* 줄어드는 영역이 항상 중앙에 오도록 */
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+}
+header .container_header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+header button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+header h1 button {
+  font-size: 2rem;
+  font-weight: bold;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 10px;
+}
+header nav ul li button {
+  font-size: 1.2rem;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: url('../images/me.jpg') center center;
+  background-size: cover;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container_header">
+      <h1>
+        <button>SU</button>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <button>about</button>
+          </li>
+          <li>
+            <button>features</button>
+          </li>
+          <li>
+            <button>portfolio</button>
+          </li>
+          <li>
+            <button>contact</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container_main">
+      <h4>welcome</h4>
+      <h2>I'm a <span>front-end developer</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sequi ex recusandae excepturi accusamus autem neque.</p>
+      <button class="download">download cv</button>
+      <button class="mouse">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mouse2-fill" viewBox="0 0 16 16">
+        <path d="M7.5.026C4.958.286 3 2.515 3 5.188V5.5h4.5V.026zm1 0V5.5H13v-.312C13 2.515 11.042.286 8.5.026zM13 6.5H3v4.313C3 13.658 5.22 16 8 16s5-2.342 5-5.188V6.5z"/>
+        </svg>
+      </button>
+    </div>
+  </main>
+</body>
+</html>

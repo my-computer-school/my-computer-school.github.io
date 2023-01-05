@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body {
+  
+}   
+a, a:link, a:visited {
+  color: inherit;  /* 부모요소 상속 */
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;  /* 줄어드는 영역이 항상 중앙에 오도록 */
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+header button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        <button>SU</button>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <button>about</button>
+          </li>
+          <li>
+            <button>features</button>
+          </li>
+          <li>
+            <button>portfolio</button>
+          </li>
+          <li>
+            <button>contact</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</body>
+</html>

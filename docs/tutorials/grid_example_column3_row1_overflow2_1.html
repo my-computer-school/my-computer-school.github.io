@@ -9,64 +9,60 @@ body {
   width: 100%;
   height: 100%;
 }
-.layout {
-  margin-top: 30px;
+.container {
   background-color: bisque;
   width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
   grid-template-areas: 
-  "sidebar main";
+  "header header header"
+  "item1 item2 item3"
+  "footer footer footer";
 }
-.sidebar {
-  grid-area: sidebar;
+.header {
+  grid-area: header;
+  background-color: #999;
+}
+.item1 {
+  grid-area: item1;
   margin: 0px;
   background-color: aqua;
+  overflow: auto;
   position: sticky;
-  top: 30px;
-  display: block !important;
-  height: calc(100vh - 0vh);
-  overflow-y: auto;
+  top: 3rem;
+  height: calc(100vh - 6rem);
 }
-.main {
-  grid-area: main;
-  margin: 0px;
-  background-color: blue;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 
-  "intro toc";
-}
-.intro {
-  grid-area: intro;
+.item2 {
+  grid-area: item2;
   background-color: blueviolet;
-}
-.toc {
-  grid-area: toc;
-  background-color: blueviolet;
+  overflow: auto;
   position: sticky;
-  top: 30px;
-  height: calc(100vh - 0vh);
-  overflow-y: auto;
+  top: 3rem;
+  height: calc(100vh - 6rem);
 }
-div {
-  display: block;
+.item3 {
+  grid-area: item3;
+  background-color: blueviolet;
+  overflow: hidden;
+  position: sticky;
+  top: 3rem;
+  height: calc(100vh - 6rem);
 }
-.toc_collapse {
-  display: block !important;
+.footer {
+  grid-area: footer;
+  background-color: #999;
 }
 </style>
 </head>
 <body>
-  <div class="layout">
-    <aside class="sidebar">sidebar Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet provident in exercitationem id totam, voluptate pariatur aperiam, natus recusandae cupiditate sequi optio non ad laboriosam dolorum iste quaerat odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptate nemo vitae vel neque adipisci est, repellendus, quis dolorem quia debitis rem deserunt, reiciendis odit? Vel saepe ullam neque libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perspiciatis repellat laudantium. Officiis, numquam provident fugit odit ea iste aliquam totam eum! Odio nostrum accusantium adipisci minima perferendis doloremque animi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quis! Quis quo, natus doloribus sunt libero fuga tenetur quos impedit, facilis eveniet quaerat accusantium amet harum cumque voluptatum! Commodi, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fuga, amet natus totam iusto neque quos hic minima a? Eveniet perferendis eius laborum harum amet totam fugit voluptatem atque nobis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste distinctio consequatur ullam, molestiae obcaecati necessitatibus commodi quo quae provident facilis minima nostrum odit fugit! Quia consequatur obcaecati iure ex accusantium.</aside>
-    <main class="main">
-      <div class="intro">item2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit facere ipsam, debitis tempora neque in nesciunt iusto totam veritatis porro aliquid illum ex reiciendis possimus ad libero praesentium accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugiat delectus nesciunt mollitia quaerat magni earum molestiae voluptatem eveniet tempora saepe iste corporis quis, animi dignissimos fugit, sapiente qui quidem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, recusandae eius libero quia esse, aliquam fuga exercitationem hic ducimus debitis tempora iure temporibus dicta ab id perferendis dolor dolorem officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eveniet iusto esse hic amet. Ducimus consectetur sunt totam accusamus. Natus ipsum consectetur ut, ipsa voluptatem quibusdam sit numquam nam nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum officiis tenetur, commodi id molestias aspernatur non consequuntur perferendis corrupti pariatur cum, cumque deleniti maxime architecto veniam aut porro nostrum nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi inventore voluptatem unde reiciendis rem ullam dicta, omnis, dolorum reprehenderit eos delectus eveniet odio ut temporibus consectetur ipsam obcaecati minima sed.</div>
-      <div class="toc">
-        <div class="toc_collapse">item3</div>
-      </div>
-    </main>
+  <div class="container">
+    <div class="header">header</div>
+    <div class="item1">item1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet provident in exercitationem id totam, voluptate pariatur aperiam, natus recusandae cupiditate sequi optio non ad laboriosam dolorum iste quaerat odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptate nemo vitae vel neque adipisci est, repellendus, quis dolorem quia debitis rem deserunt, reiciendis odit? Vel saepe ullam neque libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perspiciatis repellat laudantium. Officiis, numquam provident fugit odit ea iste aliquam totam eum! Odio nostrum accusantium adipisci minima perferendis doloremque animi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quis! Quis quo, natus doloribus sunt libero fuga tenetur quos impedit, facilis eveniet quaerat accusantium amet harum cumque voluptatum! Commodi, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fuga, amet natus totam iusto neque quos hic minima a? Eveniet perferendis eius laborum harum amet totam fugit voluptatem atque nobis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste distinctio consequatur ullam, molestiae obcaecati necessitatibus commodi quo quae provident facilis minima nostrum odit fugit! Quia consequatur obcaecati iure ex accusantium.</div>
+    <div class="item2">item2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit facere ipsam, debitis tempora neque in nesciunt iusto totam veritatis porro aliquid illum ex reiciendis possimus ad libero praesentium accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugiat delectus nesciunt mollitia quaerat magni earum molestiae voluptatem eveniet tempora saepe iste corporis quis, animi dignissimos fugit, sapiente qui quidem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, recusandae eius libero quia esse, aliquam fuga exercitationem hic ducimus debitis tempora iure temporibus dicta ab id perferendis dolor dolorem officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eveniet iusto esse hic amet. Ducimus consectetur sunt totam accusamus. Natus ipsum consectetur ut, ipsa voluptatem quibusdam sit numquam nam nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum officiis tenetur, commodi id molestias aspernatur non consequuntur perferendis corrupti pariatur cum, cumque deleniti maxime architecto veniam aut porro nostrum nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi inventore voluptatem unde reiciendis rem ullam dicta, omnis, dolorum reprehenderit eos delectus eveniet odio ut temporibus consectetur ipsam obcaecati minima sed.</div>
+    <div class="item3">item3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit facere ipsam, debitis tempora neque in nesciunt iusto totam veritatis porro aliquid illum ex reiciendis possimus ad libero praesentium accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugiat delectus nesciunt mollitia quaerat magni earum molestiae voluptatem eveniet tempora saepe iste corporis quis, animi dignissimos fugit, sapiente qui quidem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, recusandae eius libero quia esse, aliquam fuga exercitationem hic ducimus debitis tempora iure temporibus dicta ab id perferendis dolor dolorem officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eveniet iusto esse hic amet. Ducimus consectetur sunt totam accusamus. Natus ipsum consectetur ut, ipsa voluptatem quibusdam sit numquam nam nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum officiis tenetur, commodi id molestias aspernatur non consequuntur perferendis corrupti pariatur cum, cumque deleniti maxime architecto veniam aut porro nostrum nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi inventore voluptatem unde reiciendis rem ullam dicta, omnis, dolorum reprehenderit eos delectus eveniet odio ut temporibus consectetur ipsam obcaecati minima sed.</div>
+    <div class="footer">footer</div>
   </div>
 </body>
 </html>
