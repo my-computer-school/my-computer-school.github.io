@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body {
+  
+}   
+a, a:link, a:visited {
+  color: inherit;  /* 부모요소 상속 */
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container_header {
+  width: 1140px;
+  margin: 0 auto;  /* 줄어드는 영역이 항상 중앙에 오도록 */
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+}
+header .container_header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+header button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+header h1 button {
+  font-size: 2rem;
+  font-weight: bold;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 10px;
+}
+header nav ul li button {
+  font-size: 1.2rem;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/me.jpg') center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main h4 {
+  font-size: 2rem;
+}
+main h2 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  letter-spacing: 3px;   /* 자간 */
+  font-family: 'Varela Round', sans-serif;
+}
+main p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+main button.download {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+main button.mouse {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  animation: up_down 1s ease-in-out infinite;
+  cursor: pointer;
+}
+main h2 span::after {
+  content: "";
+  height: 40px;
+  width: 3px;
+  background-color: #fff;
+  display: inline-block;
+  animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes up_down {
+  0% {
+    bottom: 1rem;
+  }
+  50% {
+    bottom: 1.5rem;
+  }
+  100% {
+    bottom: 1rem;
+  }
+}
+section {
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem 5rem;
+}
+section:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+section .title {
+  margin-bottom: 3rem;
+}
+section .title h4 {
+  font-size: 1.35rem;
+  color: #ed4848;
+  position: relative;
+}
+section .title h2 {
+  font-size: 3.5rem;
+}
+section .about_self::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+section .about_self .left {
+  width: 50%;
+  float: left;  
+}
+section .about_self .left img {
+  width: 100%;
+}
+section .about_self .right {
+  width: 50%;
+  float: left;
+  padding: 0 2rem;
+}
+section .about_self .right h3 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+section .about_self .right p {
+  font-size: 1.15rem;
+  margin: 1rem 0;
+}
+section .about_self .right .social svg {
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.do_inner {
+  width: 30%;
+  padding: 2rem;
+  float: left;
+  background-color: #fff;
+  margin-right: 5%;
+  cursor: pointer;
+}
+.do_me::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.do_inner:last-child {
+  margin-right: 0%;
+}
+.icon_svg {
+  width: 26px;
+  height: 26px;
+}
+.icon_fill {
+  fill: #ff6a6a;
+}
+.content h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.content p {
+  font-size: 1.15rem;
+}
+.do_inner:hover {
+  background-color: lightcoral;
+  color: white;
+}
+.do_inner:hover .icon_fill {
+  fill: white;
+}
+.portfolio_me::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.portfolio_inner {
+  width: 30%;
+  margin-right: 5%;
+  background-color: #fff;
+  float: left;
+  padding: 1rem 1rem 1.5rem 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 3rem;
+}
+.portfolio_inner:nth-child(3n) {
+  margin-right: 0%;
+}
+.portfolio_inner img {
+  width: 100%;
+  display: block;
+}
+.portfolio_inner strong {
+  color: #fa6a6a;
+  margin: 0.5rem 0;
+  display: block;
+}
+.portfolio_inner h3 {
+  font-size: 1.75rem;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container_header">
+      <h1>
+        <button>SU</button>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <button>about</button>
+          </li>
+          <li>
+            <button>features</button>
+          </li>
+          <li>
+            <button>portfolio</button>
+          </li>
+          <li>
+            <button>contact</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container_main">
+      <h4>welcome</h4>
+      <h2>I'm a <span>front-end developer</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sequi ex recusandae excepturi accusamus autem neque.</p>
+      <button class="download">download cv</button>
+      <button class="mouse">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-mouse2-fill" viewBox="0 0 16 16">
+        <path d="M7.5.026C4.958.286 3 2.515 3 5.188V5.5h4.5V.026zm1 0V5.5H13v-.312C13 2.515 11.042.286 8.5.026zM13 6.5H3v4.313C3 13.658 5.22 16 8 16s5-2.342 5-5.188V6.5z"/>
+        </svg>
+      </button>
+    </div>
+  </main>
+  <section class="about">
+    <div class="container_about">
+      <div class="title">
+        <h4>who am i</h4>
+        <h2>about me</h2>
+      </div>
+      <div class="about_self">
+        <div class="left">
+          <img src="../images/me_alone.jpg" alt="my images">
+        </div>
+        <div class="right">
+          <h3>hello, I'm sucoding</h3>
+          <p>I'm web publisher and web front-end developer.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nam? Omnis inventore unde ea, ipsam dolorem aperiam voluptates officia totam reiciendis quas dignissimos sit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore molestiae laboriosam odit deserunt nostrum sunt ducimus? Facilis.</p>
+          <div class="social">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+              <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+              <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container_features">
+      <div class="title">
+        <h4>features</h4>
+        <h2>what i do</h2>
+      </div>
+      <div class="do_me">
+        <div class="do_inner">
+          <div class="icon">
+            <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" class="icon_fill"/></svg>
+          </div>
+          <div class="content">
+            <h3>html5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore error aut ratione animi debitis temporibus ut accusamus corporis fugit dolor eligendi numquam deleniti perferendis, nesciunt ipsum nisi ducimus laudantium minus.</p>
+          </div>
+        </div>
+        <div class="do_inner">
+          <div class="icon">
+            <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" class="icon_fill"/></svg>
+          </div>
+          <div class="content">
+            <h3>css</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio porro quos expedita aut ea mollitia, doloribus fuga, dicta harum pariatur maiores repellat temporibus odit sapiente sit nisi dolorum ducimus doloremque.</p>
+          </div>
+        </div>
+        <div class="do_inner">
+          <div class="icon">
+            <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z" class="icon_fill"/></svg>
+          </div>
+          <div class="content">
+            <h3>bootstrap</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore illo dolore, suscipit minima soluta reprehenderit cumque assumenda repellat! Ipsam ipsum quod nam ad id ut laboriosam odio repudiandae. Sapiente, aliquid.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="container_portfolio">
+      <div class="title">
+        <h4>portfolio_back</h4>
+        <h2>portfolio</h2>
+      </div>
+      <div class="portfolio_me">
+        <div class="portfolio_inner">
+          <img src="../images/mock1.png" alt="sample image 1">
+          <strong>branding</strong>
+          <h3>package design</h3>
+        </div>
+        <div class="portfolio_inner">
+          <img src="../images/mock2.png" alt="sample image 2">
+          <strong>development</strong>
+          <h3>tablet app dev</h3>
+        </div>
+        <div class="portfolio_inner">
+          <img src="../images/mock3.png" alt="sample image 3">
+          <strong>marketing</strong>
+          <h3>coka cola</h3>
+        </div>
+        <div class="portfolio_inner">
+          <img src="../images/mock4.png" alt="sample image 4">
+          <strong>app</strong>
+          <h3>facebook clone</h3>
+        </div>
+        <div class="portfolio_inner">
+          <img src="../images/mock5.png" alt="sample image 5">
+          <strong>app</strong>
+          <h3>netflix clone</h3>
+        </div>
+        <div class="portfolio_inner">
+          <img src="../images/mock6.png" alt="sample image 6">
+          <strong>web</strong>
+          <h3>firmbee web</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
