@@ -244,6 +244,101 @@ section .about_self .right .social svg {
 .portfolio_inner h3 {
   font-size: 1.75rem;
 }
+.contact_me::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contact_svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 15px;
+}
+.contact_left {
+  width: 30%;
+  float: left;
+}
+.contact_right {
+  width: 65%;
+  margin-left: 5%;
+  float: left;
+}
+.contact_card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.contact_right {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+.contact_form_group {
+  margin-bottom: 1.25rem;
+}
+.contact_form_group label {
+  display: block;
+  margin-bottom: 0.85rem;
+}
+.contact_form_group input {
+  width: 100%;
+  padding: 0.625rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.contact_form_group input:focus,
+.contact_form_group textarea:focus {
+  border: 1px solid #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+.contact_form_group textarea {
+  width: 100%;
+  height: 300px;
+  outline: none;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.contact_right button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f78b00;
+  border: none;
+  color: white;
+}
+.bg {
+  background: url(../images/background.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 992px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 576px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 320px;
+  }
+}
   </style>
 </head>
 <body>
@@ -271,7 +366,7 @@ section .about_self .right .social svg {
     </div>
   </header>
   <main id="main">
-    <div class="container_main">
+    <div class="container">
       <h4>welcome</h4>
       <h2>I'm a <span>front-end developer</span></h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sequi ex recusandae excepturi accusamus autem neque.</p>
@@ -284,7 +379,7 @@ section .about_self .right .social svg {
     </div>
   </main>
   <section class="about">
-    <div class="container_about">
+    <div class="container">
       <div class="title">
         <h4>who am i</h4>
         <h2>about me</h2>
@@ -318,7 +413,7 @@ section .about_self .right .social svg {
     </div>
   </section>
   <section class="features">
-    <div class="container_features">
+    <div class="container">
       <div class="title">
         <h4>features</h4>
         <h2>what i do</h2>
@@ -354,8 +449,9 @@ section .about_self .right .social svg {
       </div>
     </div>
   </section>
+  <div class="bg"></div>
   <section class="portfolio">
-    <div class="container_portfolio">
+    <div class="container">
       <div class="title">
         <h4>portfolio_back</h4>
         <h2>portfolio</h2>
@@ -390,6 +486,62 @@ section .about_self .right .social svg {
           <img src="../images/mock6.png" alt="sample image 6">
           <strong>web</strong>
           <h3>firmbee web</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="container">
+      <div class="title">
+        <h4>contact</h4>
+        <h2>contact with me</h2>
+      </div>
+      <div class="contact_me">
+        <div class="contact_left">
+          <div class="contact_card">
+            <div class="contact_icon">
+              <svg class="contact_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg>
+            </div>
+            <div class="contact_text">
+              <h3>phone</h3>
+              <p>010-1234-5678</p>
+            </div>
+          </div>
+          <div class="contact_card">
+            <div class="contact_icon">
+              <svg class="contact_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.4 96H144 107.8 96v8.8V144v40.4 89L.2 202.5c1.6-18.1 10.9-34.9 25.7-45.8L48 140.3V96c0-26.5 21.5-48 48-48h76.6l49.9-36.9C232.2 3.9 243.9 0 256 0s23.8 3.9 33.5 11L339.4 48H416c26.5 0 48 21.5 48 48v44.3l22.1 16.4c14.8 10.9 24.1 27.7 25.7 45.8L416 273.4v-89V144 104.8 96H404.2 368 296.6 215.4zM0 448V242.1L217.6 403.3c11.1 8.2 24.6 12.7 38.4 12.7s27.3-4.4 38.4-12.7L512 242.1V448v0c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64v0zM176 160H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+            </div>
+            <div class="contact_text">
+              <h3>email</h3>
+              <p>example@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact_card">
+            <div class="contact_icon">
+              <svg class="contact_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+            </div>
+            <div class="contact_text">
+              <h3>address</h3>
+              <p>example addresses</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact_right">
+          <form action="" method="post">
+            <div class="contact_form_group">
+              <label for="name">name</label>
+              <input type="text" name="" id="name">
+            </div>
+            <div class="contact_form_group">
+              <label for="email">email</label>
+              <input type="text" name="" id="email" autocomplete="off">  <!-- 입력내용 저장 안되게  -->
+            </div>
+            <div class="contact_form_group">
+              <label for="msg">message</label>
+              <textarea name="" id="msg"></textarea>
+            </div>
+            <button>send</button>
+          </form>
         </div>
       </div>
     </div>
