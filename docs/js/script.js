@@ -74,6 +74,13 @@ function fetch_doc_html_tag_iframe(doc_html_tag_iframe){
     })
   })
 }
+function fetch_doc_html_tag_object(doc_html_tag_object){
+  fetch(doc_html_tag_object).then(function(response){
+    response.text().then(function(text){
+      document.querySelector('.article').innerHTML = text;
+    })
+  })
+}
 function fetchPageDocHtmlAttribute1(docHtmlAttribute1){
   fetch(docHtmlAttribute1).then(function(response){
     response.text().then(function(text){
@@ -540,6 +547,7 @@ function fetchPageAppChecklist(appChecklist){
   fetch(appChecklist).then(function(response){
     response.text().then(function(text){
       document.querySelector('.checklistBold').style.backgroundColor = '#eee';
+      document.querySelector('.app_web_bold').style.backgroundColor = '';
       document.querySelector('.aside').innerHTML = text;
       document.querySelector('.article').innerHTML = '';
     })
@@ -548,7 +556,8 @@ function fetchPageAppChecklist(appChecklist){
 function fetch_app_web(app_web){
   fetch(app_web).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.checklistBold').style.backgroundColor = '#eee';
+      document.querySelector('.checklistBold').style.backgroundColor = '';
+      document.querySelector('.app_web_bold').style.backgroundColor = '#eee';
       document.querySelector('.aside').innerHTML = text;
       document.querySelector('.article').innerHTML = '';
     })

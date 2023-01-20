@@ -27,10 +27,23 @@ li {
   margin: 0 auto;  /* 줄어드는 영역이 항상 중앙에 오도록 */
 }
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
+  z-index: 1;
   width: 100%;
   padding: 1rem;
+}
+.active {
+  background-color: #000;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 header .container_header {
   display: flex;
@@ -405,24 +418,24 @@ section .about_self::after {
   </style>
 </head>
 <body>
-  <header>
+  <header class="active">
     <div class="container_header">
       <h1>
-        <button>SU</button>
+        <button data-animation-scroll="true" data-target="#main">SU</button>
       </h1>
       <nav>
         <ul>
           <li>
-            <button>about</button>
+            <button data-animation-scroll="true" data-target=".about">about</button>
           </li>
           <li>
-            <button>features</button>
+            <button data-animation-scroll="true" data-target=".features">features</button>
           </li>
           <li>
-            <button>portfolio</button>
+            <button data-animation-scroll="true" data-target=".portfolio">portfolio</button>
           </li>
           <li>
-            <button>contact</button>
+            <button data-animation-scroll="true" data-target=".contact">contact</button>
           </li>
         </ul>
       </nav>
