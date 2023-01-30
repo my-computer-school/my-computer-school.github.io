@@ -12,9 +12,7 @@
   padding: 0;
   box-sizing: border-box;
 } 
-body {
-  
-}   
+
 a, a:link, a:visited {
   color: inherit;  /* 부모요소 상속 */
   text-decoration: none;
@@ -31,7 +29,7 @@ header {
   top: 0;
   z-index: 1;
   width: 100%;
-  padding: 1rem;
+  padding: 0rem;
 }
 .active {
   background-color: #000;
@@ -421,21 +419,21 @@ section .about_self::after {
   <header class="active">
     <div class="container_header">
       <h1>
-        <button data_animation_scroll="true" data_target=".main">SU</button>
+        <button data-animation-scroll="true" data-target=".main">SU</button>
       </h1>
       <nav>
         <ul>
           <li>
-            <button data_animation_scroll="true" data_target=".about">about</button>
+            <button data-animation-scroll="true" data-target=".about">about</button>
           </li>
           <li>
-            <button data_animation_scroll="true" data_target=".features">features</button>
+            <button data-animation-scroll="true" data-target=".features">features</button>
           </li>
           <li>
-            <button data_animation_scroll="true" data_target=".portfolio">portfolio</button>
+            <button data-animation-scroll="true" data-target=".portfolio">portfolio</button>
           </li>
           <li>
-            <button data_animation_scroll="true" data_target=".contact">contact</button>
+            <button data-animation-scroll="true" data-target=".contact">contact</button>
           </li>
         </ul>
       </nav>
@@ -663,10 +661,11 @@ section .about_self::after {
       window.scrollTo({top: target_scroll_y, behavior: 'smooth'});
     }
 
-    const scroll_move = document.querySelectorAll('[data_animation_scroll="true"]');
+    const scroll_move = document.querySelectorAll('[data-animation-scroll="true"]');
     console.log(scroll_move);
     for(let i=0; i<scroll_move.length; i++) {
       scroll_move[i].addEventListener("click", function(e) {
+        console.log(this.dataset.target);
         animation_move(this.dataset.target);
       });
     }
