@@ -16,10 +16,16 @@
     <article class="">
       <div>
         <ul>
-          <li><a href="/doc/</a></li>
+          <li><a href="/doc/006.html">ubuntu 22.04 절전모드 해제 방법</li>
           <ol>
-            <li>left</li>
-            <li>right</li>
+            <li>systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target</li>
+              <ol>
+                <li>Loaded: loaded 라고 적혀있으면 절전모드 동작 중이라는 뜻</li>
+              </ol>
+            <li>sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target</li>
+              <ol>
+                <li>Loaded: loaded 에서 Loaded: masked 로 바뀐걸 볼 수 있다.</li>
+              </ol>
           </ol>
         </ul>
       </div>
