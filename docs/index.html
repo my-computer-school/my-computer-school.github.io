@@ -106,10 +106,11 @@
             <div class="collapse" id="collapseExample">
               <div class="card card-body">
                 <ol>
-                  <li>apt update</li>
-                  <li>apt install fcitx-lib*</li>
-                  <li>apt install fcitx-hangul*</li>
-                  <li>apt install fonts-nanum*</li>
+                  <li>터미널에 아래 명령을 입력해 보자.</li>
+                  <li>systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target</li>
+                  <li>Loaded: loaded 라고 적혀있으면 절전모드 동작 중이라는 뜻이다.</li>
+                  <li>sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target</li>
+                  <li>Loaded: loaded 에서 Loaded: masked 로 바뀐걸 볼 수 있다.</li>
                 </ol>
               </div>
             </div>
