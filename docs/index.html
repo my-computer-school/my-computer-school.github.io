@@ -6,6 +6,7 @@
     <title>home</title>
     <link rel="stylesheet" href="./css/bootstrap5.3.2.css">
     <link rel="stylesheet" href="./css/bootstrap5.3.2_examples.css">
+    <link rel="stylesheet" href="./css/vanilla.css">
   </head>
   
   <body class="">
@@ -183,10 +184,28 @@
       </div>
     </article>
 
+    <section class="mytodo-container">
+      <!-- Create Form -->
+      <div class="mytodo-list">
+        <form action="javascript:void(0);" id="CreateForm"><input type="text" id="add-task" placeholder="New Task"> <input type="submit" onclick="CreateTask()" value="Create"></form>
+        <!-- Update Form -->
+        <form action="javascript:void(0);" id="UpdateForm"> 
+        <input type="text" id="update-task"> <input type="submit" value="Update"> <a onclick="CloseInput()" id="close">&#10006;</a></form>
+        <!-- Counter -->
+        <p id="counter"></p>
+        <!-- MyTodo List Table -->
+        <table>
+        <tr><th>My Todo List</th></tr>
+        <tbody id="mytodo-tasks"></tbody>
+        </table>
+      </div>
+    </section>
+
     <footer class="">
       <div class="text-align-center"></div>
     </footer>
     
     <script src="./js/bootstrap5.3.2.js"></script>
+    <script src="./js/vanilla.js"></script>
   </body>
 </html>
