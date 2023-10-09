@@ -93,68 +93,44 @@
         <div class="col-8">
           <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
             <h4 id="list-item-1">debian 한글 패키지 설치하기</h4>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <ol>
-                    <li>apt update</li>
-                    <li>apt install fcitx-lib*</li>
-                    <li>apt install fcitx-hangul*</li>
-                    <li>apt install fonts-nanum*</li>
-                  </ol>
-                </div>
-              </div>
+              <ol>
+                <li>apt update</li>
+                <li>apt install fcitx-lib*</li>
+                <li>apt install fcitx-hangul*</li>
+                <li>apt install fonts-nanum*</li>
+              </ol>
             <h4 id="list-item-2">debian user(일반사용자)에게 루트 권한 주기</h4>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <ol>
-                    <li>whoami  #결과가 root가 아니라면 아래 명령으로 root로 변경</li>
-                    <li>su</li>
-                    <li>nano /etc/sudoers  #마지막 줄에 아래글 추가</li>
-                    <li>username  ALL=(ALL:ALL)  ALL</li>
-                  </ol>
-                </div>
-              </div>
+              <ol>
+                <li>whoami  #결과가 root가 아니라면 아래 명령으로 root로 변경</li>
+                <li>su</li>
+                <li>nano /etc/sudoers  #마지막 줄에 아래글 추가</li>
+                <li>username  ALL=(ALL:ALL)  ALL</li>
+              </ol>
             <h4 id="list-item-3">debian 텍스트 웹브라우저 w3m 설치하기</h4>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <ol>
-                    <li>apt install w3m</li>
-                    <li>w3m https://www.naver.com</li>
-                  </ol>
-                </div>
-              </div>
+              <ol>
+                <li>apt install w3m</li>
+                <li>w3m https://www.naver.com</li>
+              </ol>
             <h4 id="list-item-4">debian 고정 ip 설정하기</h4>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <ol>
-                    <li>ip</li>
-                    <li>sudo nano /etc/network/interfaces  #주소변경</li>
-                    <li>sudo nano /etc/hosts  #주소변경</li>
-                    <li>sudo service networking restart</li>
-                  </ol>
-                </div>
-              </div>
+              <ol>
+                <li>ip</li>
+                <li>sudo nano /etc/network/interfaces  #주소변경</li>
+                <li>sudo nano /etc/hosts  #주소변경</li>
+                <li>sudo service networking restart</li>
+              </ol>
             <h4 id="list-item-5">구글 스프레드시트 문자열 자르기</h4>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <ol>
-                    <li>left</li>
-                    <li>right</li>
-                  </ol>
-                </div>
-              </div>
+              <ol>
+                <li>left</li>
+                <li>right</li>
+              </ol>
             <h4 id="list-item-6">ubuntu 22.04 절전모드 해제 방법</h4>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <ol>
-                    <li>터미널에 아래 명령을 입력해 보자.</li>
-                    <li>systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target</li>
-                    <li>Loaded: loaded 라고 적혀있으면 절전모드 동작 중이라는 뜻이다.</li>
-                    <li>sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target</li>
-                    <li>Loaded: loaded 에서 Loaded: masked 로 바뀐걸 볼 수 있다.</li>
-                  </ol>
-                </div>
-              </div>
+              <ol>
+                <li>터미널에 아래 명령을 입력해 보자.</li>
+                <li>systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target</li>
+                <li>Loaded: loaded 라고 적혀있으면 절전모드 동작 중이라는 뜻이다.</li>
+                <li>sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target</li>
+                <li>Loaded: loaded 에서 Loaded: masked 로 바뀐걸 볼 수 있다</li>
+              </ol>
           </div>
         </div>
       </div>
