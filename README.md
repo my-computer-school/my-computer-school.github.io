@@ -1,5 +1,7 @@
 ### Hi there this is my homepage 👋
 
+* 홈페이지 만들기
+
 <!--
 **my-computer-school/my-computer-school** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
