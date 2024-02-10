@@ -4,29 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/style_light_house.css">
+  <script>
+    function printGuGuDan(){
+        // document.getElementById("dan") dan 이라는 id 가 들어있는 html 태그 객체를 가져옴
+        console.dir(document.getElementById("dan"));
+        // 객체 내 namespaceURL 이라는 변수의  값을 가져옴
+        console.log(document.getElementById("dan").namespaceURI);
+
+        // 객체 내 value 변수의 값을 가져옴
+        var dan = document.getElementById("dan").value;
+
+        console.log("dan : "+dan)
+        // console.log("출력");
+        for(var i=1; i<10; i++){
+            console.log(dan+" * "+i+" : "+dan*i);
+        }
+
+    }
+  </script>
+  <!-- 출처: https://terianp.tistory.com/92 [Terian의 IT 도전기:티스토리] -->
 </head>
 <body>
-  <input type="checkbox" name="light" id="light">
-  <input type="checkbox" name="night" id="night">
-  <div class="sky">
-    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><i></i><i></i><i></i><i></i><i></i><i></i>
-  </div>
-  <div class="sea"><span></span></div>
-  <div class="content">
-    <div class="lighthouse">
-      <div class="base"></div>
-      <div class="tower"></div>
-      <div class="top"></div>
-      <div class="roof"></div>
-      <div class="light"></div>
-    </div>
-    <div class="lighthouse">
-      <div class="base"></div>
-      <div class="tower"></div>
-    </div>
-    <label for="light"></label>
-  </div>
-  <label for="night"></label>
+  <input type="text" name="" id="dan">
+  <input type="button" value="전송" onclick="printGuGuDan()">
 </body>
 </html>
