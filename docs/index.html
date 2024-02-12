@@ -1,443 +1,259 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
 <head>
-    <link rel="icon" href="./img/brand.png">
-    <link rel="stylesheet" href="./mvp.css">
 
     <meta charset="utf-8">
-    <meta name="description" content="MVP.css - No classes, no framework. Just semantic HTML and you're done.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Sidebars · Bootstrap v5.3</title>
 
-    <title>MVP.css - Minimalist stylesheet for HTML elements</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
 
-</head>
+    
 
-<body>
-    <header>
-        <nav>
-            <a href="https://andybrewer.github.io/mvp/"><img alt="MVP.css" src="./img/logo.png" height="70"></a>
-            <ul>
-                <li>Home</li>
-                <li><a href="#docs">Docs</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="https://www.github.com/andybrewer/mvp/" target="_blank">GitHub &nearr;</a></li>
-            </ul>
-        </nav>
-        <h1>A <u>minimalist</u> stylesheet for HTML elements</h1>
-        <p><b>No class names, no frameworks,</b> just <em>semantic</em> HTML and <mark>you're done</mark>.</p>
-        <br>
-        <p><a download="mvp.html" href="./mvp.html" target="_blank"><i>Download HTML &nearr;</i></a><a
-                download="mvp.css" href="./mvp.css" target="_blank"><b>Download MVP.css (9kb) &nearr;</b></a></p>
-        <br><br>
-        <p><sup>PRO TIP</sup> Add this code to a new HTML
-            file:<br><br><code id="currentVersion" onclick="copyText('currentVersion');">&lt;link rel="stylesheet" href="https://unpkg.com/mvp.css"&gt; <img src="./img/icon-copy.png" height="15" width="15" style="position: relative; top: 3px;"></code></p>
-    </header>
-    <main>
-        <hr>
-        <section>
-            <header>
-                <h2>Simple, reusable components</h2>
-                <p>For a clean looking design that doesn't get in the way</p>
-            </header>
-            <aside>
-                <img alt="HTML only" src="./img/html.svg" height="150">
-                <h3>HTML and You're Done</h3>
-                <p>MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming
-                    conventions.</p>
-                <p><a href="https://www.w3schools.com/TAGS/ref_byfunc.asp" target="_blank"><em>HTML Guide
-                            &nearr;</em></a></p>
-            </aside>
-            <aside>
-                <img alt="Mobile friendly" src="./img/mobile.svg" height="150">
-                <h3>Mobile-friendly UI</h3>
-                <p>MVP is designed to look great on all browsers and devices out of the box for rapid prototyping.
-                </p>
-                <p>It's like an amped up CSS reset that you can toss into any project to get decent styling.</p>
-            </aside>
-            <aside>
-                <img alt="MIT license" src="./img/license.svg" height="150">
-                <h3>MIT License</h3>
-                <p>MVP is released under the permissive MIT license so you can freely use it however you'd like.</p>
-                <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
-            </aside>
-        </section>
-        <hr>
-        <section id="testimonials">
-            <blockquote>
-                <img alt="Quote" src="./img/icon-quote.svg" height="80"><br>
-                "By far the easiest stylesheet I've ever used. It integrates easily into <s>one</s> all of my
-                startup&nbsp;projects."
-                <footer><img alt="MVP.css" src="./img/brand.png" height="36"><br><br><i>- Andy Brewer, Author of
-                        MVP.css</i></footer>
-            </blockquote>
-        </section>
-        <hr>
-        <section id="features">
-            <header>
-                <h2>Flexibility without complexity</h2>
-                <p>A few, clean styling options without all the bells and whistles</p>
-            </header>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>MVP.css</th>
-                        <th>No CSS</th>
-                        <th>Custom CSS</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>Mobile friendly</td>
-                    <td><b>&#10003;</b></td>
-                    <td>&#10003;</td>
-                    <td>&#10003;</td>
-                </tr>
-                <tr>
-                    <td>Works out of the box</td>
-                    <td><b>&#10003;</b></td>
-                    <td>&#10003;</td>
-                    <td>&empty;</td>
-                </tr>
-                <tr>
-                    <td>Easy to customize</td>
-                    <td><b>&#10003;</b></td>
-                    <td>&#10003;</td>
-                    <td>&empty;</td>
-                </tr>
-                <tr>
-                    <td>Only semantic HTML</td>
-                    <td><b>&#10003;</b></td>
-                    <td>&#10003;</td>
-                    <td>&empty;</td>
-                </tr>
-                <tr>
-                    <td>No class names</td>
-                    <td><b>&#10003;</b></td>
-                    <td>&#10003;</td>
-                    <td>&empty;</td>
-                </tr>
-                <tr>
-                    <td>Perfect for an MVP</td>
-                    <td><b>&#10003;</b></td>
-                    <td>&empty;</td>
-                    <td>&empty;</td>
-                </tr>
-            </table>
-        </section>
-        <hr>
-        <div id="figure">
-            <header>
-                <h2>A decent MVP in no time</h2>
-                <p>More building and less designing with "set and forget" styling.</p>
-            </header>
-            <figure>
-                <img alt="Stock photo" src="./img/stock.jpg">
-                <figcaption><i>"Uber for X" brainstorming session</i></figcaption>
-            </figure>
-        </div>
-        <hr>
-        <article id="docs">
-            <h2>Docs</h2>
-            <h3 id="html">HTML Reference</h3>
-            <aside>
-                <p>For a showcase of each styled element, check out the <a href="./mvp.html" target="_blank">quickstart
-                        template &nearr;</a>.</p>
-            </aside><br>
-            <p>MVP.css works with the following HTML elements:</p>
-            <ul>
-                <li><code>&lt;a&gt;</code> <small>&mdash; text links</small>
-                    <ul>
-                        <li><code>&lt;a&gt;&lt;b&gt;</code>, <code>&lt;a&gt;&lt;strong&gt;</code> <small>&mdash; solid
-                                link buttons</small>
-                        </li>
-                        <li><code>&lt;a&gt;&lt;em&gt;</code>, <code>&lt;a&gt;&lt;i&gt;</code> <small>&mdash; outlined
-                                link buttons</small>
-                        </li>
-                    </ul>
-                </li>
-                <li><code>&lt;article&gt;</code> <small>&mdash; content area with normal styling</small>
-                    <ul>
-                        <li><code>&lt;article&gt;&lt;aside&gt;</code> <small>&mdash; text callout</small>
-                        </li>
-                    </ul>
-                </li>
-                <li><code>&lt;blockquote&gt;</code> <small>&mdash; quote callout</small>
-                    <ul>
-                        <li><code>&lt;blockquote&gt;&lt;footer&gt;</code> <small>&mdash; quote attribution</small>
-                        </li>
-                    </ul>
-                </li>
-                <li><code>&lt;body&gt;</code> <small>&mdash; default parent element</small></li>
-                <li><code>&lt;button&gt;</code> <small>&mdash; form buttons</small></li>
-                <li><code>&lt;code&gt;</code> <small>&mdash; inline code highlighting</small></li>
-                <li><code>&lt;details&gt;</code> <small>&mdash; default expandable content section</small>
-                    <ul>
-                        <li><code>&lt;details&gt;&lt;summary&gt;</code> <small>&mdash; expandable heading</small></li>
-                    </ul>
-                </li>
-                <li><code>&lt;dialog&gt;</code> <small>&mdash; popup windows</small></li>
-                <li><code>&lt;div&gt;</code> <small>&mdash; unstyled element</small></li>
-                <li><code>&lt;figure&gt;</code> <small>&mdash; image callouts</small>
-                    <ul>
-                        <li><code>&lt;figure&gt;&lt;figcaption&gt;</code> <small>&mdash; image callout captions</small>
-                        </li>
-                    </ul>
-                </li>
-                <li><code>&lt;footer&gt;</code> <small>&mdash; footer area</small></li>
-                <li><code>&lt;form&gt;</code> <small>&mdash; small form area</small>
-                    <ul>
-                        <li><code>&lt;form&gt;&lt;input&gt;</code> <small>&mdash; short input field</small></li>
-                        <li><code>&lt;form&gt;&lt;label&gt;</code> <small>&mdash; form field labels</small></li>
-                        <li><code>&lt;form&gt;&lt;select&gt;</code> <small>&mdash; dropdown options container</small>
-                            <ul>
-                                <li><code>&lt;form&gt;&lt;select&gt;&lt;option&gt;</code> <small>&mdash; dropdown option
-                                        items</small></li>
-                            </ul>
-                        </li>
-                        <li><code>&lt;form&gt;&lt;textarea&gt;</code> <small>&mdash; large input field</small></li>
-                    </ul>
-                </li>
-                <li><code>&lt;header&gt;</code> <small>&mdash; content area with centered styling</small></li>
-                <li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>,
-                    <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> <small>&mdash; headings</small></li>
-                <li><code>&lt;hr&gt;</code> <small>&mdash; horizontal rule (divider)</small></li>
-                <li><code>&lt;main&gt;</code> <small>&mdash; main content area</small></li>
-                <li><code>&lt;mark&gt;</code> <small>&mdash; text highlighting</small></li>
-                <li><code>&lt;nav&gt;</code> <small>&mdash; top navigation</small>
-                    <ul>
-                        <li><code>&lt;nav&gt;&lt;ul&gt;</code> <small>&mdash; nav links container</small></li>
-                        <li><code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;</code> <small>&mdash; nav link items</small></li>
-                        <li><code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;&lt;ul&gt;</code> <small>&mdash; nav dropdown
-                                container</small></li>
-                        <li><code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;&lt;ul&gt;&lt;li&gt;</code> <small>&mdash; nav dropdown
-                                link items</small></li>
-                    </ul>
-                </li>
-                <li><code>&lt;ol&gt;</code> <small>&mdash; numbered list container</small>
-                    <ul>
-                        <li><code>&lt;ol&gt;&lt;li&gt;</code> <small>&mdash; numbered list items</small></li>
-                    </ul>
-                </li>
-                <li><code>&lt;p&gt;</code> <small>&mdash; paragraph tag</small></li>
-                <li><code>&lt;pre&gt;</code> <small>&mdash; preformatted text</small>
-                    <ul>
-                        <li><code>&lt;pre&gt;&lt;code&gt;</code> <small>&mdash; code block</small></li>
-                        <li><code>&lt;pre&gt;&lt;samp&gt;</code> <small>&mdash; computer output block</small></li>
-                    </ul>
-                </li>
-                <li><code>&lt;samp&gt;</code> <small>&mdash; inline computer output</small></li>
-                <li><code>&lt;section&gt;</code> <small>&mdash; content area for centered / special content</small>
-                    <ul>
-                        <li><code>&lt;section&gt;&lt;aside&gt;</code> <small>&mdash; content card</small></li>
-                    </ul>
-                </li>
-                <li><code>&lt;small&gt;</code> <small>&mdash; smaller text</small></li>
-                <li><code>&lt;sup&gt;</code> <small>&mdash; raised text (notification bubbles)</small></li>
-                <li><code>&lt;table&gt;</code> <small>&mdash; data table</small>
-                    <ul>
-                        <li><code>&lt;table&gt;&lt;td&gt;</code> <small>&mdash; data table cell</small></li>
-                        <li><code>&lt;table&gt;&lt;th&gt;</code> <small>&mdash; data table header cell</small></li>
-                        <li><code>&lt;table&gt;&lt;thead&gt;</code> <small>&mdash; data table header section</small>
-                        </li>
-                        <li><code>&lt;table&gt;&lt;tr&gt;</code> <small>&mdash; data table row</small></li>
-                    </ul>
-                </li>
-                <li><code>&lt;ul&gt;</code> <small>&mdash; unordered list container</small>
-                    <ul>
-                        <li><code>&lt;ul&gt;&lt;li&gt;</code> <small>&mdash; unordered list item</small></li>
-                    </ul>
-                </li>
-            </ul>
-            <br>
-            <h3 id="variables">Modifying the CSS variables</h3>
-            <p>MVP.css includes a list of CSS variables. Editing these variables will change the styles globally.</p>
-            <pre>
-                <code>
-:root {
-    --active-brightness: 0.85;
-    --border-radius: 5px;
-    --box-shadow: 2px 2px 10px;
-    --color-accent: #118bee15;
-    --color-bg: #fff;
-    --color-bg-secondary: #e9e9e9;
-    --color-link: #118bee;
-    --color-secondary: #920de9;
-    --color-secondary-accent: #920de90b;
-    --color-shadow: #f4f4f4;
-    --color-table: #118bee;
-    --color-text: #000;
-    --color-text-secondary: #999;
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    --hover-brightness: 1.2;
-    --justify-important: center;
-    --justify-normal: left;
-    --line-height: 1.5;
-    --width-card: 285px;
-    --width-card-medium: 460px;
-    --width-card-wide: 800px;
-    --width-content: 1080px;
-}
-                </code>
-            </pre>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-            <p>Custom styles can be added inside a <code>&lt;style&gt;</code> tag, or at the end of your local <code>mvp.css</code> file</p>
-        </article>
-        <hr>
-        <article id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <details>
-                <summary>Why would I use this?</summary>
-                <p>If you just want to launch already.</p>
-                <p><sup>PRO TIP</sup> An MVP is a temporary site, it doesn't have to be <i>and shouldn't be</i> perfect.
-                </p>
-            </details>
-            <details>
-                <summary>What skills will I need?</summary>
-                <p>Mostly HTML, maybe a hint of CSS if you want to get fancy.</p>
-                <p><i>CSS</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <progress max="100" value="5">5</progress></p>
-                <p><i>Design</i>&nbsp;&nbsp; <progress max="100" value="0">0</progress></p>
-                <p><i>HTML</i>&nbsp;&nbsp;&nbsp;&nbsp; <progress max="100" value="100">100</progress></p>
-            </details>
-            <details>
-                <summary>Is there a minified version?</summary>
-                <p>No, you don't need one for an MVP.</p>
-            </details>
-            <details>
-                <summary>How can I improve my design?</summary>
-                <p>Here are some helpful resources:</p>
-                <ul>
-                    <li>Emojis - <a href="https://www.emojicopy.com/" target="_blank">Emojicopy
-                            &nearr;</a></li>
-                    <li>Icons - <a href="https://www.toptal.com/designers/htmlarrows/" target="_blank">HTML Entities
-                            List by TopTal
-                            &nearr;</a></li>
-                    <li>Icons - <a href="https://thenounproject.com/" target="_blank">TheNounProject
-                            &nearr;</a></li>
-                    <li>Illustrations - <a href="https://gallery.manypixels.co/" target="_blank">Manypixels
-                            &nearr;</a></li>
-                    <li>Illustrations - <a href="https://undraw.co/illustrations" target="_blank">Undraw &nearr;</a>
-                    </li>
-                    <li>Logo - <a href="https://www.namecheap.com/logo-maker/app/" target="_blank">Namecheap Logo
-                            Maker &nearr;</a></li>
-                    <li>Product Shots - <a href="https://www.screely.com/" target="_blank">Screely &nearr;</a></li>
-                    <li>Stock Photos - <a href="https://www.pexels.com/" target="_blank">Pexels &nearr;</a></li>
-                    <li>Stock Photos - <a href="https://unsplash.com/" target="_blank">Unsplash &nearr;</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>How do I handle a user's dark mode preference?</summary>
-                <p>By default <code>&lt;html&gt;</code> will force users into light mode. By using <code>&lt;html color-mode="user"&gt;</code> MVP.css will respect the user's dark mode preferences. The original concept and additional tips can be found in this article: <a href="https://ryanfeigenbaum.com/dark-mode/" target="_ext">https://ryanfeigenbaum.com/dark-mode/</a></p>
-            </details>
-            <details>
-                <summary>What if I don't like the default styles?</summary>
-                <p>Most styles are editable through <em>CSS variables</em>. You can also add your own styles
-                    inline, at the end of MVP.css or in a new stylesheet.</p>
-                <p><sup>PRO TIP</sup> If there are two conflicting CSS styles, the last one will take precedence.</p>
-                <pre>
-                    <code>
-:root {
-    --color-bg: #fff;
-}
+<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-/* Lower in the CSS, or in a 2nd stylesheet */
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
 
-:root {
-    --color-bg: #000; /* This will take precedence */
-}
-                    </code>
-                </pre>
-            </details>
-            <details>
-                <summary>What if I still don't like it?</summary>
-                <p>That's OK, you probably shouldn't love your MVP. The goal of MVP.css is to help you
-                    feel <i>slightly</i> less embarrased about it.</p>
-                <p><span style="font-size: xx-large; position: relative; top: 6px; margin-right: 7px;">👉</span> If you
-                    want a CSS framework with more features check out <a href="https://bulma.io/" target="_blank">Bulma
-                        &nearr;</a> or <a href="https://tailwindcss.com/" target="_blank">Tailwind &nearr;</a>.</p>
-            </details>
-        </article>
-        <hr>
-        <section id="ideas">
-            <header>
-                <img alt="Idea" src="./img/idea.svg" height="200">
-                <h2>What can you build with MVP.css?</h2>
-                <p>Free ideas below &darr;</p>
-            </header>
-            <form>
-                <header>
-                    <img alt="MVP.css" src="./img/brand.png" height="80">
-                </header>
-                <label for="company">A company you like:</label>
-                <input type="text" id="company" name="company" size="28" placeholder="Company name">
-                <label for="hobby">A hobby you like:</label>
-                <textarea cols="28" rows="2" id="hobby"></textarea>
-                <label for="model">Business Model:</label>
-                <select id="model">
-                    <option value="bootstrapped">bootstrapped</option>
-                    <option value="VC-backed">funded</option>
-                </select>
-                <label>Team Size:</label>
-                <input type="radio" id="founders-solo" name="founders" value="a solo founder" checked> <label
-                    for="founders-solo">Solo</label>
-                <input type="radio" id="founders-co" name="founders" value="two co-founders"> <label
-                    for="founders-co">Co-founders</label>
-                <label>Focus:</label>
-                <input type="checkbox" id="focus-price" name="focus[]" value="price" checked> <label
-                    for="focus-price">Price</label>
-                <input type="checkbox" id="focus-service" name="focus[]" value="service"> <label
-                    for="focus-service">Service</label>
-                <input type="checkbox" id="focus-features" name="focus[]" value="features"> <label
-                    for="focus-features">Features</label>
-                <label for="valuation">Valuation:</label>
-                <input type="range" id="valuation" name="valuation" value="50" />
-                <br>
-                <button type="submit" id="show">Submit</button>
-            </form>
-            <dialog id="popup">
-                <div id="results"></div>
-                <button id="close">Close</button>
-            </dialog>
-        </section>
-    </main>
-    <footer>
-        <hr>
-        <p>
-            Made by <a href="https://www.andybrewer.com" target="_blank">Andy Brewer
-                &nearr;</a><br>
-        </p>
-    </footer>
 
-    <script>
-        function copyText(el) {
-            var data = [new ClipboardItem({ "text/plain": new Blob([document.getElementById(el).innerText], { type: "text/plain" }) })];
-            navigator.clipboard.write(data).then(function() {
-            alert("Copied to clipboard");
-            }, function() {
-            console.error("Unable to write to clipboard. :-(");
-            });
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
+      }
 
-        var dialog = document.getElementById('popup');
-        document.querySelector('#show').onclick = function() {
-            let company = document.getElementById("company").value || "GitHub";
-            let focusAreas = [];
-            document.querySelectorAll("input[name='focus[]']:checked").forEach(el => { focusAreas.push(el.value) });
-            let focus = focusAreas.join(" / ") || "stealthy growth";
-            let founders = document.querySelector("input[name='founders']:checked").value;
-            let hobby = document.getElementById("hobby").value || "design";
-            let model = document.getElementById("model").value;
-            let valuation = document.getElementById("valuation").value;
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
 
-            document.getElementById("results").innerHTML = `<h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${hobby}</b></mark> with ${founders} and a focus on ${focus}, targeting a $${valuation}B valuation.</p>`;
-            dialog.show();
-            return false;
-        };
-        document.querySelector('#close').onclick = function() {
-            dialog.close();
-            return false;
-        };
-    </script>
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="bootstrap" viewBox="0 0 118 94">
+    <title>Bootstrap</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+  </symbol>
+  <symbol id="home" viewBox="0 0 16 16">
+    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+  </symbol>
+  <symbol id="speedometer2" viewBox="0 0 16 16">
+    <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+    <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+  </symbol>
+  <symbol id="table" viewBox="0 0 16 16">
+    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+  </symbol>
+  <symbol id="people-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+  </symbol>
+  <symbol id="grid" viewBox="0 0 16 16">
+    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+  </symbol>
+</svg>
+
+<main class="d-flex flex-nowrap">
+  <div class="b-example-divider b-example-vr"></div>
+
+  <div class="flex-shrink-0 p-3" style="width: 280px;">
+    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+      <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-5 fw-semibold">Collapsible</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          Home
+        </button>
+        <div class="collapse show" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Dashboard
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Orders
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Account
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</main>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="sidebars.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-
 </html>
